@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18783A741F5D9DFA00D3F2EE /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */; };
 		18AB48411F5BDAD50048B760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48391F5BDAB10048B760 /* main.m */; };
-		18AB48431F5BDB150048B760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AB48421F5BDB090048B760 /* LaunchScreen.storyboard */; };
 		18AB48441F5BDB210048B760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48371F5BDAB10048B760 /* AppDelegate.m */; };
 		69BA6D75781C88352793293C /* libPods-AirbnbDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22D78FA32AD0CD5049F7C5F /* libPods-AirbnbDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		18783A731F5D9DEE00D3F2EE /* HTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
 		18AB48191F5BD73C0048B760 /* AirbnbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AB482A1F5BD73C0048B760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AB48361F5BDAB10048B760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18AB48371F5BDAB10048B760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18AB48391F5BDAB10048B760 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18AB48401F5BDAC70048B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18AB48421F5BDB090048B760 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6989EDE6C84D9108299F9C73 /* Pods-AirbnbDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbDemo/Pods-AirbnbDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B22D78FA32AD0CD5049F7C5F /* libPods-AirbnbDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirbnbDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92BC923D9583D53C49FC1BF /* Pods-AirbnbDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbDemo/Pods-AirbnbDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +101,8 @@
 		18AB483A1F5BDAB10048B760 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				18783A731F5D9DEE00D3F2EE /* HTTPRequest.h */,
+				18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -135,7 +138,6 @@
 		18AB483F1F5BDAB10048B760 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				18AB48421F5BDB090048B760 /* LaunchScreen.storyboard */,
 				18AB48401F5BDAC70048B760 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -219,7 +221,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18AB48431F5BDB150048B760 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AB48441F5BDB210048B760 /* AppDelegate.m in Sources */,
+				18783A741F5D9DFA00D3F2EE /* HTTPRequest.m in Sources */,
 				18AB48411F5BDAD50048B760 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,9 +397,11 @@
 			baseConfigurationReference = 6989EDE6C84D9108299F9C73 /* Pods-AirbnbDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKW67GFDHM;
 				INFOPLIST_FILE = AirbnbDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ossey.AirbnbDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,9 +414,11 @@
 			baseConfigurationReference = C92BC923D9583D53C49FC1BF /* Pods-AirbnbDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKW67GFDHM;
 				INFOPLIST_FILE = AirbnbDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ossey.AirbnbDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
