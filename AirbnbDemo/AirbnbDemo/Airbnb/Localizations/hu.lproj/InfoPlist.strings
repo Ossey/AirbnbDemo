@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Az Airbnb aktuális helyzetedet használja a közeli hirdetések megjelenítéséhez, a csalás megakadályozásához és a kiadó helyed egyszerűbb meghirdetéséhez.";
+"NSLocationAlwaysUsageDescription" = "Az Airbnb aktuális helyzetedet használja a közeli hirdetések megjelenítéséhez, a csalás megakadályozásához és a kiadó helyed egyszerűbb meghirdetéséhez.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

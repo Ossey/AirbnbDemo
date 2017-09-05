@@ -1,0 +1,4 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb χρησιμοποιεί την τοποθεσία σας για να σας εμφανίζει κοντινές καταχωρήσεις, για λόγους πρόληψης απάτης και για να σας διευκολύνει να καταχωρήσετε το χώρο σας.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb通過使用您的位置來為您顯示附近的房源、預防欺詐以及讓您容易發布房源。";
+"NSLocationAlwaysUsageDescription" = "Airbnb通過使用您的位置來為您顯示附近的房源、預防欺詐以及讓您容易發布房源。";
+"NSCameraUsageDescription" = "用於拍照。";
+"NSContactsUsageDescription" = "用於與好友分享。";
+"NSPhotoLibraryUsageDescription" = "用於訪問照片。";

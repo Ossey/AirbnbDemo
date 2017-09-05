@@ -1,0 +1,9 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb通过使用您的位置来为您显示附近的房源、预防欺诈以及让您容易发布房源。";
+"NSLocationAlwaysUsageDescription" = "Airbnb通过使用您的位置来为您显示附近的房源、预防欺诈以及让您容易发布房源。";
+"NSCameraUsageDescription" = "用于拍照。";
+"NSContactsUsageDescription" = "用于与好友分享。";
+"NSPhotoLibraryUsageDescription" = "用于访问照片。";
+"CFBundleDisplayName" = "爱彼迎";
+"CFBundleName" = "爱彼迎";
+"CFBundleSpokenName" = "爱彼迎";
+"UILaunchStoryboardName" = "LaunchScreen_zh_hans";

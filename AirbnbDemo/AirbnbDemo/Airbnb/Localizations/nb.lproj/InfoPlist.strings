@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb bruker posisjonen din for å vise deg utleisteder i nærheten, for å forhindre svindel og for gjøre det lettere for deg å legge ut stedet ditt.";
+"NSLocationAlwaysUsageDescription" = "Airbnb bruker posisjonen din for å vise deg utleisteder i nærheten, for å forhindre svindel og for gjøre det lettere for deg å legge ut stedet ditt.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

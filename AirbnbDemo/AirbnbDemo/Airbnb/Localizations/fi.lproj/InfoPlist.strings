@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb käyttää sijaintiasi näyttääkseen sinulle lähellä olevia kohteita. Näin halutaan ehkäistä petoksia ja helpottaa kohteesi ilmoittamista.";
+"NSLocationAlwaysUsageDescription" = "Airbnb käyttää sijaintiasi näyttääkseen sinulle lähellä olevia kohteita. Näin halutaan ehkäistä petoksia ja helpottaa kohteesi ilmoittamista.";
+"NSCameraUsageDescription" = "Käytetty kuvien ottamiseen";
+"NSContactsUsageDescription" = "Käytetty jakamiseen ystävien kanssa.";
+"NSPhotoLibraryUsageDescription" = "Käytetty kuvien katselemiseen.";

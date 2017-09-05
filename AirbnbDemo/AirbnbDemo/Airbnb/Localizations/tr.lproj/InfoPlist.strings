@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb size civardaki kayıtları göstermek, dolandırıcılığı önlemek ve yerinizi kaydetmenizi kolaylaştırmak amacıyla konumunuzu kullanır.";
+"NSLocationAlwaysUsageDescription" = "Airbnb size civardaki kayıtları göstermek, dolandırıcılığı önlemek ve yerinizi kaydetmenizi kolaylaştırmak amacıyla konumunuzu kullanır.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "自分が今いる場所をベースに最寄りのリスティングも表示が可能に。詐欺の予防にもなるし、お部屋の掲載もずっとラクです。";
+"NSLocationAlwaysUsageDescription" = "自分が今いる場所をベースに最寄りのリスティングも表示が可能に。詐欺の予防にもなるし、お部屋の掲載もずっとラクです。";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

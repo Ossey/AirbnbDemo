@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb notar staðsetningu þína til að birta skráningar í nágrenninu, til að hindra svikastarfsemi og auðvelda þér að skrá rými þitt.";
+"NSLocationAlwaysUsageDescription" = "Airbnb notar staðsetningu þína til að birta skráningar í nágrenninu, til að hindra svikastarfsemi og auðvelda þér að skrá rými þitt.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

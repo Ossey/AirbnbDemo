@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "O Airbnb usa a sua localização para mostrar acomodações próximas a você, evitar fraudes e facilitar o anúncio do seu espaço.";
+"NSLocationAlwaysUsageDescription" = "O Airbnb usa a sua localização para mostrar acomodações próximas a você, evitar fraudes e facilitar o anúncio do seu espaço.";
+"NSCameraUsageDescription" = "Usado para tirar fotos.";
+"NSContactsUsageDescription" = "Usado para compartilhar com seus amigos.";
+"NSPhotoLibraryUsageDescription" = "Usado para acessar fotos.";

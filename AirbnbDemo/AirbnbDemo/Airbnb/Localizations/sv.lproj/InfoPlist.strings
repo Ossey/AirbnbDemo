@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb använder sig av din position för att kunna visa boenden i närheten, förebygga bedrägerier och göra det lättare för dig att annonsera ut ditt boende.";
+"NSLocationAlwaysUsageDescription" = "Airbnb använder sig av din position för att kunna visa boenden i närheten, förebygga bedrägerier och göra det lättare för dig att annonsera ut ditt boende.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

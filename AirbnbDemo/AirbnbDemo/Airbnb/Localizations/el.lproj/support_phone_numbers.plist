@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>phone_numbers</key>
+	<array>
+		<dict>
+			<key>country</key>
+			<string>Ηνωμένες Πολιτείες της Αμερικής</string>
+			<key>number</key>
+			<string>+1-855-424-7262</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Αργεντινή</string>
+			<key>number</key>
+			<string>+54 11 53 52 78 88</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Αυστρία</string>
+			<key>number</key>
+			<string>+43 (0) 72 08 83 800</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Αυστραλία</string>
+			<key>number</key>
+			<string>+61 2 8520 3333</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Βραζιλία</string>
+			<key>number</key>
+			<string>+55 21 3958-5800</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Γαλλία</string>
+			<key>end</key>
+			<string>2012-01-13 17:00:00</string>
+			<key>main_numbers</key>
+			<array>
+				<string>+33 (0)1 84 88 60 05</string>
+			</array>
+			<key>number</key>
+			<string>+33 (0)1 84 88 40 00</string>
+			<key>start</key>
+			<string>2012-01-09 8:00:00</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Γερμανία</string>
+			<key>number</key>
+			<string>+49 (0)30 30 80 83 80</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Δανία</string>
+			<key>number</key>
+			<string>+45 89 88 20 00</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ελβετία</string>
+			<key>number</key>
+			<string>+41 (0) 43 50 84 900</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ελλάδα</string>
+			<key>number</key>
+			<string>+30 211 1989888</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ηνωμένο Βασίλειο</string>
+			<key>number</key>
+			<string>+44 203 318 1111</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ιαπωνία</string>
+			<key>number</key>
+			<string>+81 800 100 1008</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ιρλανδία</string>
+			<key>number</key>
+			<string>+353 16 97 1831</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ισπανία</string>
+			<key>end</key>
+			<string>2012-01-13 17:00:00</string>
+			<key>main_numbers</key>
+			<array>
+				<string>+34 91 123 30 16</string>
+			</array>
+			<key>number</key>
+			<string>+34 91 123 45 67</string>
+			<key>start</key>
+			<string>2012-01-09 8:00:00</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ισραήλ</string>
+			<key>number</key>
+			<string>+972 3 939 9977</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ιταλία</string>
+			<key>number</key>
+			<string>+39-06-99366533</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Κίνα</string>
+			<key>number</key>
+			<string>400-716-0164</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Μεξικό</string>
+			<key>number</key>
+			<string>+52 55 41 70 43 33</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Νέα Ζηλανδία</string>
+			<key>number</key>
+			<string>+64 4 4880 888</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Νορβηγία</string>
+			<key>number</key>
+			<string>+47 21 61 16 88</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Νότια Κορέα</string>
+			<key>number</key>
+			<string>+82 808 220 230</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ολλανδία</string>
+			<key>number</key>
+			<string>+31 (0) 20 52 22 333</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Περού</string>
+			<key>number</key>
+			<string>+5117075777</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Πολωνία</string>
+			<key>number</key>
+			<string>+48 22 30 72 000</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Πορτογαλία</string>
+			<key>number</key>
+			<string>+351 30 880 3888</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Πουέρτο Ρίκο</string>
+			<key>number</key>
+			<string>+17879190880 </string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Ρωσία</string>
+			<key>number</key>
+			<string>+7 (495) 3803515</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Σουηδία</string>
+			<key>number</key>
+			<string>+46 844 68 12 34</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Χιλή</string>
+			<key>number</key>
+			<string>+56229380777</string>
+		</dict>
+		<dict>
+			<key>country</key>
+			<string>Χονγκ Κονγκ</string>
+			<key>number</key>
+			<string>+852 5808 8888</string>
+		</dict>
+	</array>
+</dict>
+</plist>

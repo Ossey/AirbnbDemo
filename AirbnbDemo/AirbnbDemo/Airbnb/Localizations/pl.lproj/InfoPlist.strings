@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb używa Twojej aktualnej lokalizacji, by pokazać oferty w pobliżu, uniknąć ryzyka popełnienia oszustwa i ułatwić Ci opublikowanie oferty.";
+"NSLocationAlwaysUsageDescription" = "Airbnb używa Twojej aktualnej lokalizacji, by pokazać oferty w pobliżu, uniknąć ryzyka popełnienia oszustwa i ułatwić Ci opublikowanie oferty.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

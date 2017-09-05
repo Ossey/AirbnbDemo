@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "Airbnb využívá tvoji polohu, aby ti ukázalo nabídky v okolí, kvůli prevenci proti podvodům, a pro usnadnění zadání nabídky.";
+"NSLocationAlwaysUsageDescription" = "Airbnb využívá tvoji polohu, aby ti ukázalo nabídky v okolí, kvůli prevenci proti podvodům, a pro usnadnění zadání nabídky.";
+"NSCameraUsageDescription" = "Used for taking photos.";
+"NSContactsUsageDescription" = "Used for sharing with friends.";
+"NSPhotoLibraryUsageDescription" = "Used for accessing photos.";

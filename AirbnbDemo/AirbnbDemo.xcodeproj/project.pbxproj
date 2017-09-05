@@ -51,6 +51,118 @@
 		184F9D111F5F18B100FF40A1 /* Correct.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Correct.json; sourceTree = "<group>"; };
 		184F9D121F5F18D000FF40A1 /* deeplinks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = deeplinks.json; sourceTree = "<group>"; };
 		184F9D131F5F18DC00FF40A1 /* diamond_animated.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = diamond_animated.json; sourceTree = "<group>"; };
+		184F9D151F5F19E600FF40A1 /* push.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = push.caf; sourceTree = "<group>"; };
+		184F9D181F5F1AD200FF40A1 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D1B1F5F1AD200FF40A1 /* en_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_CA; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D1D1F5F1AD200FF40A1 /* en_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_CA; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D1F1F5F1AD200FF40A1 /* en_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en_CA; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D221F5F1AD300FF40A1 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D241F5F1AD300FF40A1 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D261F5F1AD300FF40A1 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = hu; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D291F5F1AD300FF40A1 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D2C1F5F1AD300FF40A1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D2E1F5F1AD300FF40A1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D301F5F1AD300FF40A1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D321F5F1AD300FF40A1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D351F5F1AD300FF40A1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D371F5F1AD300FF40A1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D391F5F1AD300FF40A1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D3B1F5F1AD300FF40A1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = pt; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D3E1F5F1AD300FF40A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D401F5F1AD300FF40A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D421F5F1AD300FF40A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D441F5F1AD300FF40A1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D471F5F1AD300FF40A1 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D491F5F1AD300FF40A1 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D4B1F5F1AD300FF40A1 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en_AU; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D4E1F5F1AD300FF40A1 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D501F5F1AD300FF40A1 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D521F5F1AD300FF40A1 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D541F5F1AD300FF40A1 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = sv; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D571F5F1AD300FF40A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D5A1F5F1AD300FF40A1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D5C1F5F1AD300FF40A1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D5E1F5F1AD300FF40A1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D601F5F1AD300FF40A1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fi; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D631F5F1AD300FF40A1 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D651F5F1AD300FF40A1 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D671F5F1AD300FF40A1 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = pl; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D6A1F5F1AD400FF40A1 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D6C1F5F1AD400FF40A1 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D6E1F5F1AD400FF40A1 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = cs; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D711F5F1AD400FF40A1 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D731F5F1AD400FF40A1 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D751F5F1AD400FF40A1 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en_GB; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D781F5F1AD400FF40A1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D7A1F5F1AD400FF40A1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D7C1F5F1AD400FF40A1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = nb; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D7F1F5F1AD400FF40A1 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D811F5F1AD400FF40A1 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D831F5F1AD400FF40A1 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ca; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D861F5F1AD400FF40A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D881F5F1AD400FF40A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D8A1F5F1AD400FF40A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D8C1F5F1AD400FF40A1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = es; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D8F1F5F1AD400FF40A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D911F5F1AD400FF40A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9D931F5F1AD400FF40A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D951F5F1AD400FF40A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D981F5F1AD400FF40A1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9D9A1F5F1AD400FF40A1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9D9C1F5F1AD400FF40A1 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = id; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9D9F1F5F1AD400FF40A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DA11F5F1AD400FF40A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DA31F5F1AD400FF40A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DA51F5F1AD400FF40A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DA81F5F1AD400FF40A1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DAA1F5F1AD400FF40A1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DAC1F5F1AD400FF40A1 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ms; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DAF1F5F1AD500FF40A1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DB11F5F1AD500FF40A1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DB31F5F1AD500FF40A1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DB51F5F1AD500FF40A1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "pt-PT"; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DB81F5F1AD500FF40A1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DBA1F5F1AD500FF40A1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DBC1F5F1AD500FF40A1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DBE1F5F1AD500FF40A1 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = th; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DC11F5F1AD500FF40A1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DC31F5F1AD500FF40A1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DC51F5F1AD500FF40A1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DC71F5F1AD500FF40A1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = nl; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DCA1F5F1AD500FF40A1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DCC1F5F1AD500FF40A1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DCE1F5F1AD500FF40A1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DD01F5F1AD500FF40A1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DD31F5F1AD500FF40A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DD51F5F1AD500FF40A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DD71F5F1AD500FF40A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DD91F5F1AD500FF40A1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DDC1F5F1AD500FF40A1 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DDE1F5F1AD500FF40A1 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DE01F5F1AD500FF40A1 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = el; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DE31F5F1AD500FF40A1 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DE51F5F1AD500FF40A1 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DE71F5F1AD500FF40A1 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DE91F5F1AD500FF40A1 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = tr; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DEC1F5F1AD600FF40A1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DEE1F5F1AD600FF40A1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DF01F5F1AD600FF40A1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DF21F5F1AD600FF40A1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DF51F5F1AD600FF40A1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9DF71F5F1AD600FF40A1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9DF91F5F1AD600FF40A1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9DFB1F5F1AD600FF40A1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ru; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9DFE1F5F1AD600FF40A1 /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9E001F5F1AD600FF40A1 /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = is; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9E021F5F1AD600FF40A1 /* is */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = is; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9E051F5F1AD600FF40A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9E071F5F1AD600FF40A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9E091F5F1AD600FF40A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9E0B1F5F1AD600FF40A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = support_phone_numbers.plist; sourceTree = "<group>"; };
+		184F9E0E1F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = InfoPlist.strings; sourceTree = "<group>"; };
+		184F9E101F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
+		184F9E121F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = Localizable.strings; sourceTree = "<group>"; };
+		184F9E141F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = da; path = support_phone_numbers.plist; sourceTree = "<group>"; };
 		18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
 		18783A731F5D9DEE00D3F2EE /* HTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
 		18AB48191F5BD73C0048B760 /* AirbnbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +428,355 @@
 			path = "react-native-datepicker";
 			sourceTree = "<group>";
 		};
+		184F9D141F5F195500FF40A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		184F9D161F5F1AD200FF40A1 /* hr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D171F5F1AD200FF40A1 /* Localizable.strings */,
+			);
+			path = hr.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D191F5F1AD200FF40A1 /* en_CA.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D1A1F5F1AD200FF40A1 /* InfoPlist.strings */,
+				184F9D1C1F5F1AD200FF40A1 /* Localizable.strings */,
+				184F9D1E1F5F1AD200FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = en_CA.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D201F5F1AD300FF40A1 /* hu.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D211F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D231F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D251F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = hu.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D271F5F1AD300FF40A1 /* ro.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D281F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+			);
+			path = ro.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D2A1F5F1AD300FF40A1 /* it.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D2B1F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D2D1F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+				184F9D2F1F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D311F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = it.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D331F5F1AD300FF40A1 /* pt.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D341F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D361F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+				184F9D381F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D3A1F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = pt.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D3C1F5F1AD300FF40A1 /* ko.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D3D1F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D3F1F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+				184F9D411F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D431F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = ko.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D451F5F1AD300FF40A1 /* en_AU.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D461F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D481F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D4A1F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = en_AU.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D4C1F5F1AD300FF40A1 /* sv.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D4D1F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D4F1F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+				184F9D511F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D531F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = sv.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D551F5F1AD300FF40A1 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D561F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D581F5F1AD300FF40A1 /* fi.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D591F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D5B1F5F1AD300FF40A1 /* Localizable-Netverify.strings */,
+				184F9D5D1F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D5F1F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = fi.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D611F5F1AD300FF40A1 /* pl.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D621F5F1AD300FF40A1 /* InfoPlist.strings */,
+				184F9D641F5F1AD300FF40A1 /* Localizable.strings */,
+				184F9D661F5F1AD300FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = pl.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D681F5F1AD400FF40A1 /* cs.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D691F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D6B1F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D6D1F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = cs.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D6F1F5F1AD400FF40A1 /* en_GB.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D701F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D721F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D741F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = en_GB.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D761F5F1AD400FF40A1 /* nb.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D771F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D791F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D7B1F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = nb.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D7D1F5F1AD400FF40A1 /* ca.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D7E1F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D801F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D821F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = ca.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D841F5F1AD400FF40A1 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D851F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D871F5F1AD400FF40A1 /* Localizable-Netverify.strings */,
+				184F9D891F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D8B1F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = es.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D8D1F5F1AD400FF40A1 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D8E1F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D901F5F1AD400FF40A1 /* Localizable-Netverify.strings */,
+				184F9D921F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D941F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D961F5F1AD400FF40A1 /* id.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D971F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9D991F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9D9B1F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = id.lproj;
+			sourceTree = "<group>";
+		};
+		184F9D9D1F5F1AD400FF40A1 /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9D9E1F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9DA01F5F1AD400FF40A1 /* Localizable-Netverify.strings */,
+				184F9DA21F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9DA41F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = fr.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DA61F5F1AD400FF40A1 /* ms.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DA71F5F1AD400FF40A1 /* InfoPlist.strings */,
+				184F9DA91F5F1AD400FF40A1 /* Localizable.strings */,
+				184F9DAB1F5F1AD400FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = ms.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DAD1F5F1AD500FF40A1 /* pt-PT.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DAE1F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DB01F5F1AD500FF40A1 /* Localizable-Netverify.strings */,
+				184F9DB21F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DB41F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = "pt-PT.lproj";
+			sourceTree = "<group>";
+		};
+		184F9DB61F5F1AD500FF40A1 /* th.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DB71F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DB91F5F1AD500FF40A1 /* Localizable-Netverify.strings */,
+				184F9DBB1F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DBD1F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = th.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DBF1F5F1AD500FF40A1 /* nl.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DC01F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DC21F5F1AD500FF40A1 /* Localizable-Netverify.strings */,
+				184F9DC41F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DC61F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = nl.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DC81F5F1AD500FF40A1 /* zh-Hant.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DC91F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DCB1F5F1AD500FF40A1 /* Localizable-Netverify.strings */,
+				184F9DCD1F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DCF1F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = "zh-Hant.lproj";
+			sourceTree = "<group>";
+		};
+		184F9DD11F5F1AD500FF40A1 /* ja.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DD21F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DD41F5F1AD500FF40A1 /* Localizable-Netverify.strings */,
+				184F9DD61F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DD81F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = ja.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DDA1F5F1AD500FF40A1 /* el.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DDB1F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DDD1F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DDF1F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = el.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DE11F5F1AD500FF40A1 /* tr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DE21F5F1AD500FF40A1 /* InfoPlist.strings */,
+				184F9DE41F5F1AD500FF40A1 /* Localizable-Netverify.strings */,
+				184F9DE61F5F1AD500FF40A1 /* Localizable.strings */,
+				184F9DE81F5F1AD500FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = tr.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DEA1F5F1AD600FF40A1 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DEB1F5F1AD600FF40A1 /* InfoPlist.strings */,
+				184F9DED1F5F1AD600FF40A1 /* Localizable-Netverify.strings */,
+				184F9DEF1F5F1AD600FF40A1 /* Localizable.strings */,
+				184F9DF11F5F1AD600FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = de.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DF31F5F1AD600FF40A1 /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DF41F5F1AD600FF40A1 /* InfoPlist.strings */,
+				184F9DF61F5F1AD600FF40A1 /* Localizable-Netverify.strings */,
+				184F9DF81F5F1AD600FF40A1 /* Localizable.strings */,
+				184F9DFA1F5F1AD600FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = ru.lproj;
+			sourceTree = "<group>";
+		};
+		184F9DFC1F5F1AD600FF40A1 /* is.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9DFD1F5F1AD600FF40A1 /* InfoPlist.strings */,
+				184F9DFF1F5F1AD600FF40A1 /* Localizable.strings */,
+				184F9E011F5F1AD600FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = is.lproj;
+			sourceTree = "<group>";
+		};
+		184F9E031F5F1AD600FF40A1 /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9E041F5F1AD600FF40A1 /* InfoPlist.strings */,
+				184F9E061F5F1AD600FF40A1 /* Localizable-Netverify.strings */,
+				184F9E081F5F1AD600FF40A1 /* Localizable.strings */,
+				184F9E0A1F5F1AD600FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = "zh-Hans.lproj";
+			sourceTree = "<group>";
+		};
+		184F9E0C1F5F1AD600FF40A1 /* da.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				184F9E0D1F5F1AD600FF40A1 /* InfoPlist.strings */,
+				184F9E0F1F5F1AD600FF40A1 /* Localizable-Netverify.strings */,
+				184F9E111F5F1AD600FF40A1 /* Localizable.strings */,
+				184F9E131F5F1AD600FF40A1 /* support_phone_numbers.plist */,
+			);
+			path = da.lproj;
+			sourceTree = "<group>";
+		};
 		18AB48101F5BD73C0048B760 = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +807,7 @@
 		18AB48321F5BDAB10048B760 /* Airbnb */ = {
 			isa = PBXGroup;
 			children = (
+				184F9D141F5F195500FF40A1 /* Frameworks */,
 				18AB48341F5BDAB10048B760 /* Code */,
 				18AB483D1F5BDAB10048B760 /* Fonts */,
 				18AB483E1F5BDAB10048B760 /* Localizations */,
@@ -408,6 +870,39 @@
 		18AB483E1F5BDAB10048B760 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
+				184F9D551F5F1AD300FF40A1 /* Base.lproj */,
+				184F9D7D1F5F1AD400FF40A1 /* ca.lproj */,
+				184F9D681F5F1AD400FF40A1 /* cs.lproj */,
+				184F9E0C1F5F1AD600FF40A1 /* da.lproj */,
+				184F9DEA1F5F1AD600FF40A1 /* de.lproj */,
+				184F9DDA1F5F1AD500FF40A1 /* el.lproj */,
+				184F9D451F5F1AD300FF40A1 /* en_AU.lproj */,
+				184F9D191F5F1AD200FF40A1 /* en_CA.lproj */,
+				184F9D6F1F5F1AD400FF40A1 /* en_GB.lproj */,
+				184F9D8D1F5F1AD400FF40A1 /* en.lproj */,
+				184F9D841F5F1AD400FF40A1 /* es.lproj */,
+				184F9D581F5F1AD300FF40A1 /* fi.lproj */,
+				184F9D9D1F5F1AD400FF40A1 /* fr.lproj */,
+				184F9D161F5F1AD200FF40A1 /* hr.lproj */,
+				184F9D201F5F1AD300FF40A1 /* hu.lproj */,
+				184F9D961F5F1AD400FF40A1 /* id.lproj */,
+				184F9DFC1F5F1AD600FF40A1 /* is.lproj */,
+				184F9D2A1F5F1AD300FF40A1 /* it.lproj */,
+				184F9DD11F5F1AD500FF40A1 /* ja.lproj */,
+				184F9D3C1F5F1AD300FF40A1 /* ko.lproj */,
+				184F9DA61F5F1AD400FF40A1 /* ms.lproj */,
+				184F9D761F5F1AD400FF40A1 /* nb.lproj */,
+				184F9DBF1F5F1AD500FF40A1 /* nl.lproj */,
+				184F9D611F5F1AD300FF40A1 /* pl.lproj */,
+				184F9DAD1F5F1AD500FF40A1 /* pt-PT.lproj */,
+				184F9D331F5F1AD300FF40A1 /* pt.lproj */,
+				184F9D271F5F1AD300FF40A1 /* ro.lproj */,
+				184F9DF31F5F1AD600FF40A1 /* ru.lproj */,
+				184F9D4C1F5F1AD300FF40A1 /* sv.lproj */,
+				184F9DB61F5F1AD500FF40A1 /* th.lproj */,
+				184F9DE11F5F1AD500FF40A1 /* tr.lproj */,
+				184F9E031F5F1AD600FF40A1 /* zh-Hans.lproj */,
+				184F9DC81F5F1AD500FF40A1 /* zh-Hant.lproj */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -415,6 +910,7 @@
 		18AB483F1F5BDAB10048B760 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				184F9D151F5F19E600FF40A1 /* push.caf */,
 				184F9D131F5F18DC00FF40A1 /* diamond_animated.json */,
 				184F9D121F5F18D000FF40A1 /* deeplinks.json */,
 				184F9D111F5F18B100FF40A1 /* Correct.json */,
@@ -487,6 +983,37 @@
 			knownRegions = (
 				en,
 				Base,
+				hr,
+				en_CA,
+				hu,
+				ro,
+				it,
+				pt,
+				ko,
+				en_AU,
+				sv,
+				fi,
+				pl,
+				cs,
+				en_GB,
+				nb,
+				ca,
+				es,
+				id,
+				fr,
+				ms,
+				"pt-PT",
+				th,
+				nl,
+				"zh-Hant",
+				ja,
+				el,
+				tr,
+				de,
+				ru,
+				is,
+				"zh-Hans",
+				da,
 			);
 			mainGroup = 18AB48101F5BD73C0048B760;
 			productRefGroup = 18AB481A1F5BD73C0048B760 /* Products */;
@@ -568,6 +1095,897 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		184F9D171F5F1AD200FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D181F5F1AD200FF40A1 /* hr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D1A1F5F1AD200FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D1B1F5F1AD200FF40A1 /* en_CA */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D1C1F5F1AD200FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D1D1F5F1AD200FF40A1 /* en_CA */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D1E1F5F1AD200FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D1F1F5F1AD200FF40A1 /* en_CA */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D211F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D221F5F1AD300FF40A1 /* hu */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D231F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D241F5F1AD300FF40A1 /* hu */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D251F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D261F5F1AD300FF40A1 /* hu */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D281F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D291F5F1AD300FF40A1 /* ro */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D2B1F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D2C1F5F1AD300FF40A1 /* it */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D2D1F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D2E1F5F1AD300FF40A1 /* it */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D2F1F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D301F5F1AD300FF40A1 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D311F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D321F5F1AD300FF40A1 /* it */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D341F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D351F5F1AD300FF40A1 /* pt */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D361F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D371F5F1AD300FF40A1 /* pt */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D381F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D391F5F1AD300FF40A1 /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D3A1F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D3B1F5F1AD300FF40A1 /* pt */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D3D1F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D3E1F5F1AD300FF40A1 /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D3F1F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D401F5F1AD300FF40A1 /* ko */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D411F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D421F5F1AD300FF40A1 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D431F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D441F5F1AD300FF40A1 /* ko */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D461F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D471F5F1AD300FF40A1 /* en_AU */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D481F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D491F5F1AD300FF40A1 /* en_AU */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D4A1F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D4B1F5F1AD300FF40A1 /* en_AU */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D4D1F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D4E1F5F1AD300FF40A1 /* sv */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D4F1F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D501F5F1AD300FF40A1 /* sv */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D511F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D521F5F1AD300FF40A1 /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D531F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D541F5F1AD300FF40A1 /* sv */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D561F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D571F5F1AD300FF40A1 /* Base */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D591F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D5A1F5F1AD300FF40A1 /* fi */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D5B1F5F1AD300FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D5C1F5F1AD300FF40A1 /* fi */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D5D1F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D5E1F5F1AD300FF40A1 /* fi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D5F1F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D601F5F1AD300FF40A1 /* fi */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D621F5F1AD300FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D631F5F1AD300FF40A1 /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D641F5F1AD300FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D651F5F1AD300FF40A1 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D661F5F1AD300FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D671F5F1AD300FF40A1 /* pl */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D691F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D6A1F5F1AD400FF40A1 /* cs */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D6B1F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D6C1F5F1AD400FF40A1 /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D6D1F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D6E1F5F1AD400FF40A1 /* cs */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D701F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D711F5F1AD400FF40A1 /* en_GB */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D721F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D731F5F1AD400FF40A1 /* en_GB */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D741F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D751F5F1AD400FF40A1 /* en_GB */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D771F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D781F5F1AD400FF40A1 /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D791F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D7A1F5F1AD400FF40A1 /* nb */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D7B1F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D7C1F5F1AD400FF40A1 /* nb */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D7E1F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D7F1F5F1AD400FF40A1 /* ca */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D801F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D811F5F1AD400FF40A1 /* ca */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D821F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D831F5F1AD400FF40A1 /* ca */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D851F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D861F5F1AD400FF40A1 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D871F5F1AD400FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D881F5F1AD400FF40A1 /* es */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D891F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D8A1F5F1AD400FF40A1 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D8B1F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D8C1F5F1AD400FF40A1 /* es */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D8E1F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D8F1F5F1AD400FF40A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D901F5F1AD400FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D911F5F1AD400FF40A1 /* en */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9D921F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D931F5F1AD400FF40A1 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D941F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D951F5F1AD400FF40A1 /* en */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D971F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D981F5F1AD400FF40A1 /* id */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9D991F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D9A1F5F1AD400FF40A1 /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9D9B1F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D9C1F5F1AD400FF40A1 /* id */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9D9E1F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9D9F1F5F1AD400FF40A1 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DA01F5F1AD400FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DA11F5F1AD400FF40A1 /* fr */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DA21F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DA31F5F1AD400FF40A1 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DA41F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DA51F5F1AD400FF40A1 /* fr */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DA71F5F1AD400FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DA81F5F1AD400FF40A1 /* ms */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DA91F5F1AD400FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DAA1F5F1AD400FF40A1 /* ms */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DAB1F5F1AD400FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DAC1F5F1AD400FF40A1 /* ms */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DAE1F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DAF1F5F1AD500FF40A1 /* pt-PT */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DB01F5F1AD500FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DB11F5F1AD500FF40A1 /* pt-PT */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DB21F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DB31F5F1AD500FF40A1 /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DB41F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DB51F5F1AD500FF40A1 /* pt-PT */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DB71F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DB81F5F1AD500FF40A1 /* th */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DB91F5F1AD500FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DBA1F5F1AD500FF40A1 /* th */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DBB1F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DBC1F5F1AD500FF40A1 /* th */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DBD1F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DBE1F5F1AD500FF40A1 /* th */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DC01F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DC11F5F1AD500FF40A1 /* nl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DC21F5F1AD500FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DC31F5F1AD500FF40A1 /* nl */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DC41F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DC51F5F1AD500FF40A1 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DC61F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DC71F5F1AD500FF40A1 /* nl */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DC91F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DCA1F5F1AD500FF40A1 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DCB1F5F1AD500FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DCC1F5F1AD500FF40A1 /* zh-Hant */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DCD1F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DCE1F5F1AD500FF40A1 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DCF1F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DD01F5F1AD500FF40A1 /* zh-Hant */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DD21F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DD31F5F1AD500FF40A1 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DD41F5F1AD500FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DD51F5F1AD500FF40A1 /* ja */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DD61F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DD71F5F1AD500FF40A1 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DD81F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DD91F5F1AD500FF40A1 /* ja */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DDB1F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DDC1F5F1AD500FF40A1 /* el */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DDD1F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DDE1F5F1AD500FF40A1 /* el */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DDF1F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DE01F5F1AD500FF40A1 /* el */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DE21F5F1AD500FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DE31F5F1AD500FF40A1 /* tr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DE41F5F1AD500FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DE51F5F1AD500FF40A1 /* tr */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DE61F5F1AD500FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DE71F5F1AD500FF40A1 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DE81F5F1AD500FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DE91F5F1AD500FF40A1 /* tr */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DEB1F5F1AD600FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DEC1F5F1AD600FF40A1 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DED1F5F1AD600FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DEE1F5F1AD600FF40A1 /* de */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DEF1F5F1AD600FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DF01F5F1AD600FF40A1 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DF11F5F1AD600FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DF21F5F1AD600FF40A1 /* de */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DF41F5F1AD600FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DF51F5F1AD600FF40A1 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DF61F5F1AD600FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DF71F5F1AD600FF40A1 /* ru */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9DF81F5F1AD600FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DF91F5F1AD600FF40A1 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9DFA1F5F1AD600FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DFB1F5F1AD600FF40A1 /* ru */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9DFD1F5F1AD600FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9DFE1F5F1AD600FF40A1 /* is */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9DFF1F5F1AD600FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E001F5F1AD600FF40A1 /* is */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9E011F5F1AD600FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E021F5F1AD600FF40A1 /* is */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9E041F5F1AD600FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E051F5F1AD600FF40A1 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9E061F5F1AD600FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E071F5F1AD600FF40A1 /* zh-Hans */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9E081F5F1AD600FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E091F5F1AD600FF40A1 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9E0A1F5F1AD600FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E0B1F5F1AD600FF40A1 /* zh-Hans */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+		184F9E0D1F5F1AD600FF40A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E0E1F5F1AD600FF40A1 /* da */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184F9E0F1F5F1AD600FF40A1 /* Localizable-Netverify.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E101F5F1AD600FF40A1 /* da */,
+			);
+			name = "Localizable-Netverify.strings";
+			sourceTree = "<group>";
+		};
+		184F9E111F5F1AD600FF40A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E121F5F1AD600FF40A1 /* da */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184F9E131F5F1AD600FF40A1 /* support_phone_numbers.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184F9E141F5F1AD600FF40A1 /* da */,
+			);
+			name = support_phone_numbers.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		18AB482D1F5BD73C0048B760 /* Debug */ = {

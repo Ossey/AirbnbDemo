@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "에어비앤비는 사기를 방지하고 손쉽게 숙소를 등록하며, 인근 숙소를 표시하기 위해 회원님의 위치 정보를 이용합니다.";
+"NSLocationAlwaysUsageDescription" = "에어비앤비는 사기를 방지하고 손쉽게 숙소를 등록하며, 인근 숙소를 표시하기 위해 회원님의 위치 정보를 이용합니다.";
+"NSCameraUsageDescription" = "사진 촬영에 사용됨";
+"NSContactsUsageDescription" = "친구와 공유하는 데 사용됨";
+"NSPhotoLibraryUsageDescription" = "사진 열람에 사용됨";
