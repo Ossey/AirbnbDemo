@@ -849,6 +849,11 @@
 		18AB483B1F5BDAB10048B760 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2A9C1F5F206C006290D4 /* Explore */,
+				18BA2AA01F5F206C006290D4 /* Inbox */,
+				18BA2A981F5F206C006290D4 /* Story */,
+				18BA2AA81F5F206C006290D4 /* User */,
+				18BA2AA41F5F206C006290D4 /* Wish */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -919,6 +924,161 @@
 				18AB48401F5BDAC70048B760 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		18BA2A981F5F206C006290D4 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2A991F5F206C006290D4 /* Model */,
+				18BA2A9A1F5F206C006290D4 /* View */,
+				18BA2A9B1F5F206C006290D4 /* ViewController */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		18BA2A991F5F206C006290D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BA2A9A1F5F206C006290D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BA2A9B1F5F206C006290D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18BA2A9C1F5F206C006290D4 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2A9D1F5F206C006290D4 /* Model */,
+				18BA2A9E1F5F206C006290D4 /* View */,
+				18BA2A9F1F5F206C006290D4 /* ViewController */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		18BA2A9D1F5F206C006290D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BA2A9E1F5F206C006290D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BA2A9F1F5F206C006290D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18BA2AA01F5F206C006290D4 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2AA11F5F206C006290D4 /* Model */,
+				18BA2AA21F5F206C006290D4 /* View */,
+				18BA2AA31F5F206C006290D4 /* ViewController */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		18BA2AA11F5F206C006290D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BA2AA21F5F206C006290D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BA2AA31F5F206C006290D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18BA2AA41F5F206C006290D4 /* Wish */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2AA51F5F206C006290D4 /* Model */,
+				18BA2AA61F5F206C006290D4 /* View */,
+				18BA2AA71F5F206C006290D4 /* ViewController */,
+			);
+			path = Wish;
+			sourceTree = "<group>";
+		};
+		18BA2AA51F5F206C006290D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BA2AA61F5F206C006290D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BA2AA71F5F206C006290D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18BA2AA81F5F206C006290D4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2AA91F5F206C006290D4 /* Model */,
+				18BA2AAA1F5F206C006290D4 /* View */,
+				18BA2AAB1F5F206C006290D4 /* ViewController */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		18BA2AA91F5F206C006290D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BA2AAA1F5F206C006290D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18BA2AAB1F5F206C006290D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		1E402A2017162FC31733E54F /* Frameworks */ = {
