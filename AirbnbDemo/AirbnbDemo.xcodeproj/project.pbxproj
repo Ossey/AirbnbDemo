@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18783A741F5D9DFA00D3F2EE /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */; };
 		18AB48411F5BDAD50048B760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48391F5BDAB10048B760 /* main.m */; };
 		18AB48441F5BDB210048B760 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48371F5BDAB10048B760 /* AppDelegate.m */; };
+		18BA2AAE1F5F20B8006290D4 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AAD1F5F20B8006290D4 /* ExploreViewController.m */; };
+		18BA2AB11F5F20F3006290D4 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AB01F5F20F3006290D4 /* InboxViewController.m */; };
+		18BA2AB41F5F20FF006290D4 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AB31F5F20FF006290D4 /* StoryViewController.m */; };
+		18BA2AB71F5F213B006290D4 /* UserInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AB61F5F213B006290D4 /* UserInformationViewController.m */; };
+		18BA2ABA1F5F2148006290D4 /* WishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AB91F5F2148006290D4 /* WishViewController.m */; };
+		18BA2ABF1F5F2221006290D4 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2ABE1F5F221A006290D4 /* HTTPRequest.m */; };
+		18BA2AC31F5F2308006290D4 /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AC21F5F2308006290D4 /* AppNavigationController.m */; };
+		18BA2ACA1F5F25D0006290D4 /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AC81F5F2354006290D4 /* AppTabBarController.m */; };
 		69BA6D75781C88352793293C /* libPods-AirbnbDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22D78FA32AD0CD5049F7C5F /* libPods-AirbnbDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18346FF51F5F280E008D6A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184F9CD61F5F180900FF40A1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		184F9CDA1F5F180900FF40A1 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		184F9CDB1F5F180900FF40A1 /* kba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kba.png; sourceTree = "<group>"; };
@@ -163,14 +171,27 @@
 		184F9E101F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = "Localizable-Netverify.strings"; sourceTree = "<group>"; };
 		184F9E121F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = Localizable.strings; sourceTree = "<group>"; };
 		184F9E141F5F1AD600FF40A1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = da; path = support_phone_numbers.plist; sourceTree = "<group>"; };
-		18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
-		18783A731F5D9DEE00D3F2EE /* HTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
 		18AB48191F5BD73C0048B760 /* AirbnbDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18AB482A1F5BD73C0048B760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AB48361F5BDAB10048B760 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18AB48371F5BDAB10048B760 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18AB48391F5BDAB10048B760 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18AB48401F5BDAC70048B760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18BA2AAC1F5F20B8006290D4 /* ExploreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		18BA2AAD1F5F20B8006290D4 /* ExploreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
+		18BA2AAF1F5F20F3006290D4 /* InboxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		18BA2AB01F5F20F3006290D4 /* InboxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		18BA2AB21F5F20FF006290D4 /* StoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		18BA2AB31F5F20FF006290D4 /* StoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		18BA2AB51F5F213B006290D4 /* UserInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInformationViewController.h; sourceTree = "<group>"; };
+		18BA2AB61F5F213B006290D4 /* UserInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInformationViewController.m; sourceTree = "<group>"; };
+		18BA2AB81F5F2148006290D4 /* WishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WishViewController.h; sourceTree = "<group>"; };
+		18BA2AB91F5F2148006290D4 /* WishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WishViewController.m; sourceTree = "<group>"; };
+		18BA2ABD1F5F221A006290D4 /* HTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		18BA2ABE1F5F221A006290D4 /* HTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		18BA2AC11F5F2308006290D4 /* AppNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppNavigationController.h; sourceTree = "<group>"; };
+		18BA2AC21F5F2308006290D4 /* AppNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppNavigationController.m; sourceTree = "<group>"; };
+		18BA2AC71F5F2354006290D4 /* AppTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTabBarController.h; sourceTree = "<group>"; };
+		18BA2AC81F5F2354006290D4 /* AppTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
 		6989EDE6C84D9108299F9C73 /* Pods-AirbnbDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbDemo/Pods-AirbnbDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B22D78FA32AD0CD5049F7C5F /* libPods-AirbnbDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirbnbDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92BC923D9583D53C49FC1BF /* Pods-AirbnbDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbDemo/Pods-AirbnbDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -799,7 +820,6 @@
 			isa = PBXGroup;
 			children = (
 				18AB48321F5BDAB10048B760 /* Airbnb */,
-				18AB482A1F5BD73C0048B760 /* Info.plist */,
 			);
 			path = AirbnbDemo;
 			sourceTree = "<group>";
@@ -830,6 +850,7 @@
 		18AB48351F5BDAB10048B760 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2AC01F5F22F5006290D4 /* App view controllers */,
 				18AB48361F5BDAB10048B760 /* AppDelegate.h */,
 				18AB48371F5BDAB10048B760 /* AppDelegate.m */,
 				18AB48391F5BDAB10048B760 /* main.m */,
@@ -840,8 +861,8 @@
 		18AB483A1F5BDAB10048B760 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				18783A731F5D9DEE00D3F2EE /* HTTPRequest.h */,
-				18783A721F5D9DEE00D3F2EE /* HTTPRequest.m */,
+				18BA2ABC1F5F221A006290D4 /* HTTP */,
+				18BA2ABB1F5F21E9006290D4 /* UI Components */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -915,6 +936,7 @@
 		18AB483F1F5BDAB10048B760 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18346FF51F5F280E008D6A81 /* Info.plist */,
 				184F9D151F5F19E600FF40A1 /* push.caf */,
 				184F9D131F5F18DC00FF40A1 /* diamond_animated.json */,
 				184F9D121F5F18D000FF40A1 /* deeplinks.json */,
@@ -953,6 +975,8 @@
 		18BA2A9B1F5F206C006290D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2AB21F5F20FF006290D4 /* StoryViewController.h */,
+				18BA2AB31F5F20FF006290D4 /* StoryViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -984,6 +1008,8 @@
 		18BA2A9F1F5F206C006290D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2AAC1F5F20B8006290D4 /* ExploreViewController.h */,
+				18BA2AAD1F5F20B8006290D4 /* ExploreViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1015,6 +1041,8 @@
 		18BA2AA31F5F206C006290D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2AAF1F5F20F3006290D4 /* InboxViewController.h */,
+				18BA2AB01F5F20F3006290D4 /* InboxViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1046,6 +1074,8 @@
 		18BA2AA71F5F206C006290D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2AB81F5F2148006290D4 /* WishViewController.h */,
+				18BA2AB91F5F2148006290D4 /* WishViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1077,8 +1107,37 @@
 		18BA2AAB1F5F206C006290D4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18BA2AB51F5F213B006290D4 /* UserInformationViewController.h */,
+				18BA2AB61F5F213B006290D4 /* UserInformationViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18BA2ABB1F5F21E9006290D4 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		18BA2ABC1F5F221A006290D4 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2ABD1F5F221A006290D4 /* HTTPRequest.h */,
+				18BA2ABE1F5F221A006290D4 /* HTTPRequest.m */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		18BA2AC01F5F22F5006290D4 /* App view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18BA2AC11F5F2308006290D4 /* AppNavigationController.h */,
+				18BA2AC21F5F2308006290D4 /* AppNavigationController.m */,
+				18BA2AC71F5F2354006290D4 /* AppTabBarController.h */,
+				18BA2AC81F5F2354006290D4 /* AppTabBarController.m */,
+			);
+			path = "App view controllers";
 			sourceTree = "<group>";
 		};
 		1E402A2017162FC31733E54F /* Frameworks */ = {
@@ -1248,8 +1307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BA2AAE1F5F20B8006290D4 /* ExploreViewController.m in Sources */,
+				18BA2ABF1F5F2221006290D4 /* HTTPRequest.m in Sources */,
+				18BA2ABA1F5F2148006290D4 /* WishViewController.m in Sources */,
 				18AB48441F5BDB210048B760 /* AppDelegate.m in Sources */,
-				18783A741F5D9DFA00D3F2EE /* HTTPRequest.m in Sources */,
+				18BA2AB71F5F213B006290D4 /* UserInformationViewController.m in Sources */,
+				18BA2AC31F5F2308006290D4 /* AppNavigationController.m in Sources */,
+				18BA2AB41F5F20FF006290D4 /* StoryViewController.m in Sources */,
+				18BA2ACA1F5F25D0006290D4 /* AppTabBarController.m in Sources */,
+				18BA2AB11F5F20F3006290D4 /* InboxViewController.m in Sources */,
 				18AB48411F5BDAD50048B760 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2260,7 +2326,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKW67GFDHM;
-				INFOPLIST_FILE = AirbnbDemo/Info.plist;
+				INFOPLIST_FILE = AirbnbDemo/Airbnb/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ossey.AirbnbDemo;
@@ -2277,7 +2343,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKW67GFDHM;
-				INFOPLIST_FILE = AirbnbDemo/Info.plist;
+				INFOPLIST_FILE = AirbnbDemo/Airbnb/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ossey.AirbnbDemo;
