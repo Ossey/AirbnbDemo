@@ -22,7 +22,6 @@
 }
 
 
-
 + (UIColor *)base10 {
     return [UIColor colorWithHex:0x222222];
 }

@@ -78,6 +78,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     self.rootTabBarController = tabBarController;
     
     [self setupTabBarController];
+    [self configureExploreViewController];
     
 }
 
@@ -142,11 +143,15 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
 }
 
 - (void)configureExploreViewController {
-   
+    UIImage *tabImage = [UIImage imageNamed:@"tab_search_icon"];
+    AppNavigationController *explpreNavControler = [self navigationControllerForTabType:XYAppTabTypeExplore];
+    explpreNavControler.tabBarItem.image = tabImage;
+    NSString *str = XYLocalizedStringWithDefaultValue(@"ios.explore.755b4d8f", nil, nil, @"EXPLORA", @"1231321321");
+    explpreNavControler.tabBarItem.title = str;
 }
 
 - (AppNavigationController *)navigationControllerForTabType:(XYAppTabType)tabType {
-    if (tabType >= self.rootTabBarController.viewControllers.count ) {
+    if (tabType >= self.rootTabBarController.viewControllers.count) {
         return nil;
     }
     return (AppNavigationController *)[self.rootTabBarController viewControllers][tabType];
