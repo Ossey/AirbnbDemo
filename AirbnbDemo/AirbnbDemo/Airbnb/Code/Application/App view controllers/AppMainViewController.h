@@ -10,4 +10,6 @@
 
 @interface AppMainViewController : UIViewController
 
+- (void)launchAppInWindow:(UIWindow *)window;
+
 @end
