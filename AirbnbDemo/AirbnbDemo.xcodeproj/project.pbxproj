@@ -17,6 +17,10 @@
 		18BA2ABF1F5F2221006290D4 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2ABE1F5F221A006290D4 /* HTTPRequest.m */; };
 		18BA2AC31F5F2308006290D4 /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AC21F5F2308006290D4 /* AppNavigationController.m */; };
 		18BA2ACA1F5F25D0006290D4 /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA2AC81F5F2354006290D4 /* AppTabBarController.m */; };
+		18C0CAF81F60749200EDA2C2 /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0CAF71F60749200EDA2C2 /* AppMainViewController.m */; };
+		18C0CAFB1F60EE3200EDA2C2 /* XYTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0CAFA1F60EE3200EDA2C2 /* XYTheme.m */; };
+		18C0CAFF1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0CAFE1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m */; };
+		18C0CB031F60F50500EDA2C2 /* UIColor+XYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0CB021F60F50500EDA2C2 /* UIColor+XYExtension.m */; };
 		18D312B01F606FEE00D5B8A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D312AF1F606FEE00D5B8A5 /* LaunchScreen.storyboard */; };
 		69BA6D75781C88352793293C /* libPods-AirbnbDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22D78FA32AD0CD5049F7C5F /* libPods-AirbnbDemo.a */; };
 /* End PBXBuildFile section */
@@ -193,6 +197,15 @@
 		18BA2AC21F5F2308006290D4 /* AppNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppNavigationController.m; sourceTree = "<group>"; };
 		18BA2AC71F5F2354006290D4 /* AppTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTabBarController.h; sourceTree = "<group>"; };
 		18BA2AC81F5F2354006290D4 /* AppTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
+		18C0CAF61F60749200EDA2C2 /* AppMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMainViewController.h; sourceTree = "<group>"; };
+		18C0CAF71F60749200EDA2C2 /* AppMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppMainViewController.m; sourceTree = "<group>"; };
+		18C0CAF91F60EE3200EDA2C2 /* XYTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYTheme.h; sourceTree = "<group>"; };
+		18C0CAFA1F60EE3200EDA2C2 /* XYTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYTheme.m; sourceTree = "<group>"; };
+		18C0CAFD1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+XYExtenions.h"; sourceTree = "<group>"; };
+		18C0CAFE1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+XYExtenions.m"; sourceTree = "<group>"; };
+		18C0CB001F60F09F00EDA2C2 /* Airbnb.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airbnb.pch; sourceTree = "<group>"; };
+		18C0CB011F60F50500EDA2C2 /* UIColor+XYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+XYExtension.h"; sourceTree = "<group>"; };
+		18C0CB021F60F50500EDA2C2 /* UIColor+XYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XYExtension.m"; sourceTree = "<group>"; };
 		18D312AF1F606FEE00D5B8A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6989EDE6C84D9108299F9C73 /* Pods-AirbnbDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbnbDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbnbDemo/Pods-AirbnbDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B22D78FA32AD0CD5049F7C5F /* libPods-AirbnbDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirbnbDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -841,6 +854,7 @@
 		18AB48341F5BDAB10048B760 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				18C0CAFC1F60EEB100EDA2C2 /* Category */,
 				18AB48351F5BDAB10048B760 /* Application */,
 				18AB483A1F5BDAB10048B760 /* Common */,
 				18AB483B1F5BDAB10048B760 /* Features */,
@@ -947,6 +961,7 @@
 				184F9CD51F5F180900FF40A1 /* assets */,
 				18AB48401F5BDAC70048B760 /* Assets.xcassets */,
 				18D312AF1F606FEE00D5B8A5 /* LaunchScreen.storyboard */,
+				18C0CB001F60F09F00EDA2C2 /* Airbnb.pch */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1119,6 +1134,8 @@
 		18BA2ABB1F5F21E9006290D4 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				18C0CAF91F60EE3200EDA2C2 /* XYTheme.h */,
+				18C0CAFA1F60EE3200EDA2C2 /* XYTheme.m */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -1139,8 +1156,21 @@
 				18BA2AC21F5F2308006290D4 /* AppNavigationController.m */,
 				18BA2AC71F5F2354006290D4 /* AppTabBarController.h */,
 				18BA2AC81F5F2354006290D4 /* AppTabBarController.m */,
+				18C0CAF61F60749200EDA2C2 /* AppMainViewController.h */,
+				18C0CAF71F60749200EDA2C2 /* AppMainViewController.m */,
 			);
 			path = "App view controllers";
+			sourceTree = "<group>";
+		};
+		18C0CAFC1F60EEB100EDA2C2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18C0CAFD1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.h */,
+				18C0CAFE1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m */,
+				18C0CB011F60F50500EDA2C2 /* UIColor+XYExtension.h */,
+				18C0CB021F60F50500EDA2C2 /* UIColor+XYExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		1E402A2017162FC31733E54F /* Frameworks */ = {
@@ -1315,12 +1345,16 @@
 				18BA2ABF1F5F2221006290D4 /* HTTPRequest.m in Sources */,
 				18BA2ABA1F5F2148006290D4 /* WishViewController.m in Sources */,
 				18AB48441F5BDB210048B760 /* AppDelegate.m in Sources */,
+				18C0CAFB1F60EE3200EDA2C2 /* XYTheme.m in Sources */,
 				18BA2AB71F5F213B006290D4 /* UserInformationViewController.m in Sources */,
 				18BA2AC31F5F2308006290D4 /* AppNavigationController.m in Sources */,
 				18BA2AB41F5F20FF006290D4 /* StoryViewController.m in Sources */,
+				18C0CB031F60F50500EDA2C2 /* UIColor+XYExtension.m in Sources */,
+				18C0CAFF1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m in Sources */,
 				18BA2ACA1F5F25D0006290D4 /* AppTabBarController.m in Sources */,
 				18BA2AB11F5F20F3006290D4 /* InboxViewController.m in Sources */,
 				18AB48411F5BDAD50048B760 /* main.m in Sources */,
+				18C0CAF81F60749200EDA2C2 /* AppMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2329,6 +2363,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKW67GFDHM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AirbnbDemo/Airbnb/Resources/Airbnb.pch;
 				INFOPLIST_FILE = AirbnbDemo/Airbnb/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2345,6 +2381,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKW67GFDHM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AirbnbDemo/Airbnb/Resources/Airbnb.pch;
 				INFOPLIST_FILE = AirbnbDemo/Airbnb/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
