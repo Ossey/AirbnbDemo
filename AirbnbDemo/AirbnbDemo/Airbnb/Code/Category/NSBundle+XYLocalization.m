@@ -39,17 +39,11 @@
     return bundle;
 }
 
-- (nullable NSBundle *)xy_fallbackLanguageBundle {
-    static dispatch_once_t onceToken;
-    static NSBundle *xy_fallbackLanguageBundle;
-    dispatch_once(&onceToken, ^{
-        NSString *path = [self pathForResource:@"en" ofType:@"lproj"];
-        xy_fallbackLanguageBundle = [NSBundle bundleWithPath:path];
-    });
-    return xy_fallbackLanguageBundle;
-}
-
 @end
+
+NSString *XYLocalizedStringWithValue(NSString *key, NSString *_Nullable comment) {
+    return XYLocalizedStringWithDefaultValue(key, nil, nil, XYDefaultLocalizedValue(key), comment);
+}
 
 NSString *XYLocalizedStringWithDefaultValue(NSString *key, NSString *_Nullable appLanguage, NSBundle *_Nullable bundle, NSString *value, NSString *_Nullable comment) {
     if (bundle == nil) {
@@ -65,7 +59,7 @@ NSString *XYLocalizedStringWithDefaultValue(NSString *key, NSString *_Nullable a
     }
     
     if (!translation || [translation isEqualToString:key] || (translation.length == 0)) {
-        translation = [[bundle xy_fallbackLanguageBundle] localizedStringForKey:key value:value table:nil];
+        translation = [XYDefaultLocaleBundle() localizedStringForKey:key value:value table:nil];
     }
     
     return translation ? translation : @"";
@@ -80,4 +74,27 @@ NSString * getPreferredLanguage() {
     
     return preferredLang;
     
+}
+
+NSBundle *XYBundle() {
+    static NSBundle *__bundle;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        __bundle = [NSBundle xy_localizationBundle];
+    });
+    
+    return __bundle;
+}
+
+NSBundle *XYDefaultLocaleBundle() {
+    static NSBundle *__bundle;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *path = [XYBundle() pathForResource:[XYBundle() objectForInfoDictionaryKey:@"CFBundleDevelopmentRegion"] ofType:@"lproj"];
+        __bundle = [NSBundle bundleWithPath:path];
+    });
+    
+    return __bundle;
 }

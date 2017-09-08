@@ -10,6 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+FOUNDATION_EXPORT NSBundle *XYBundle(void);
+FOUNDATION_EXPORT NSBundle *XYDefaultLocaleBundle(void);
+#define XYDefaultLocalizedValue(key) \
+[XYDefaultLocaleBundle() localizedStringForKey:key value:@"" table:@"Localizable"]
+
+#define XYLocalizedString(key, comment) \
+[XYBundle() localizedStringForKey:(key) value:XYDefaultLocalizedValue(key) table:@"Localizable"]
+
+#define XYLocalizedStringFromNumber(number) \
+[NSNumberFormatter localizedStringFromNumber:number numberStyle:NSNumberFormatterNoStyle]
+
 /**
  * 国际化语言
  *
@@ -24,6 +35,9 @@ FOUNDATION_EXPORT NSString *XYLocalizedStringWithDefaultValue(
                                             NSBundle *_Nullable bundle,
                                             NSString *value,
                                             NSString *_Nullable comment);
+
+FOUNDATION_EXPORT NSString *XYLocalizedStringWithValue(NSString *key,
+                                                       NSString *_Nullable comment);
 
 @interface NSBundle (XYLocalization)
 

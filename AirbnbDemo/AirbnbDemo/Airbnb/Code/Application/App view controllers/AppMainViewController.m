@@ -146,7 +146,8 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     UIImage *tabImage = [UIImage imageNamed:@"tab_search_icon"];
     AppNavigationController *explpreNavControler = [self navigationControllerForTabType:XYAppTabTypeExplore];
     explpreNavControler.tabBarItem.image = tabImage;
-    NSString *str = XYLocalizedStringWithDefaultValue(@"ios.explore.755b4d8f", nil, nil, @"EXPLORA", @"1231321321");
+    NSString *str = XYLocalizedString(@"ios.explore.755b4d8f", @"");
+    
     explpreNavControler.tabBarItem.title = str;
 }
 
