@@ -288,6 +288,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     NSMutableArray<UITabBarItem *> *tabBarItems = [NSMutableArray arrayWithCapacity:5];
     for (UITabBar *tabBar in tabBars) {
         tabBar.barTintColor = theme.colors.chromeBackground;
+        [tabBar setTintColor:theme.colors.destructive];
         if (@available(iOS 10.0, *)) {
             [tabBar setUnselectedItemTintColor:theme.colors.unselected];
         }
@@ -302,10 +303,11 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     [tabBarItems addObject:[UITabBarItem appearance]];
     UIFont *tabBarItemFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
     NSDictionary *tabBarTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.secondaryText, NSFontAttributeName: tabBarItemFont};
-    NSDictionary *tabBarSelectedTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.link, NSFontAttributeName: tabBarItemFont};
+    NSDictionary *tabBarSelectedTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.destructive, NSFontAttributeName: tabBarItemFont};
     for (UITabBarItem *item in tabBarItems) {
         [item setTitleTextAttributes:tabBarTitleTextAttributes forState:UIControlStateNormal];
         [item setTitleTextAttributes:tabBarSelectedTitleTextAttributes forState:UIControlStateSelected];
+        
     }
     
     [[UISwitch appearance] setOnTintColor:theme.colors.accent];

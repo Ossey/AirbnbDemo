@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1821A5BF1F62B33E0099DA19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284EB1F61A83D005E67DE /* Localizable.strings */; };
 		1821A5D41F62D7410099DA19 /* UIImage+XYExtensionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821A5D31F62D7410099DA19 /* UIImage+XYExtensionStyle.m */; };
+		1821A5D51F62E1D00099DA19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284E91F61A83D005E67DE /* InfoPlist.strings */; };
+		1821A5D61F62E1F60099DA19 /* Localizable-Netverify.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284E71F61A83D005E67DE /* Localizable-Netverify.strings */; };
 		186284AC1F6194C4005E67DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AB48401F5BDAC70048B760 /* Assets.xcassets */; };
 		186284AF1F6195DF005E67DE /* NSBundle+XYLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 186284AE1F6195DF005E67DE /* NSBundle+XYLocalization.m */; };
 		18AB48411F5BDAD50048B760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48391F5BDAB10048B760 /* main.m */; };
@@ -923,6 +925,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1821A5D61F62E1F60099DA19 /* Localizable-Netverify.strings in Resources */,
+				1821A5D51F62E1D00099DA19 /* InfoPlist.strings in Resources */,
 				1821A5BF1F62B33E0099DA19 /* Localizable.strings in Resources */,
 				186284AC1F6194C4005E67DE /* Assets.xcassets in Resources */,
 				18D312B01F606FEE00D5B8A5 /* LaunchScreen.storyboard in Resources */,
