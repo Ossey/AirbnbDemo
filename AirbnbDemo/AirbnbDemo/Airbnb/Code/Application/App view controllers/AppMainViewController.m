@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, XYAppTabType) {
  */
 static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
 
-@interface AppMainViewController () <UITabBarControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate>
+@interface AppMainViewController () <UITabBarControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate, XYThemeable>
 
 @property (nonatomic, strong) UITabBarController *rootTabBarController;
 @property (nonatomic, strong) ExploreViewController *exploreViewController;
@@ -42,6 +42,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
 @property (nonatomic, strong) InboxViewController *inboxViewController;
 @property (nonatomic, strong) UserInformationViewController *userInfoViewControler;
 @property (nonatomic, strong) StoryViewController *storyViewController;
+@property (nonatomic, strong) XYTheme *theme;
 
 @end
 
@@ -79,7 +80,12 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     
     [self setupTabBarController];
     [self configureExploreViewController];
+    [self configureWishViewController];
+    [self configureStroyViewController];
+    [self configureInboxViewController];
+    [self configureUserInfoController];
     
+    [self applyTheme:[XYTheme standard]];
 }
 
 
@@ -144,12 +150,44 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
 
 - (void)configureExploreViewController {
     UIImage *tabImage = [UIImage imageNamed:@"tab_search_icon"];
-    AppNavigationController *explpreNavControler = [self navigationControllerForTabType:XYAppTabTypeExplore];
-    explpreNavControler.tabBarItem.image = tabImage;
-    NSString *str = XYLocalizedString(@"ios.explore.755b4d8f", @"");
-    
-    explpreNavControler.tabBarItem.title = str;
+    AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeExplore];
+    navigationController.tabBarItem.image = tabImage;
+    NSString *str = XYLocalizedString(@"ios.explore.823bb461", @"");
+    navigationController.tabBarItem.title = str;
 }
+
+- (void)configureWishViewController {
+    UIImage *tabImage = [UIImage imageNamed:@"tab_stories_icon"];
+    AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeWish];
+    navigationController.tabBarItem.image = tabImage;
+    NSString *str = XYLocalizedString(@"ios.wishlist.cfa36f00", @"");
+    navigationController.tabBarItem.title = str;
+}
+
+- (void)configureStroyViewController {
+    UIImage *tabImage = [UIImage imageNamed:@"tab_saved_icon"];
+    AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeStory];
+    navigationController.tabBarItem.image = tabImage;
+    NSString *str = XYLocalizedString(@"ios.stories.f43edcad", @"");
+    navigationController.tabBarItem.title = str;
+}
+
+- (void)configureInboxViewController {
+    UIImage *tabImage = [UIImage imageNamed:@"tab_inbox_icon"];
+    AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeInbox];
+    navigationController.tabBarItem.image = tabImage;
+    NSString *str = XYLocalizedString(@"ios.inbox.d6600ac1", @"");
+    navigationController.tabBarItem.title = str;
+}
+
+- (void)configureUserInfoController {
+    UIImage *tabImage = [UIImage imageNamed:@"tab_profile_icon"];
+    AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeUserInfo];
+    navigationController.tabBarItem.image = tabImage;
+    NSString *str = XYLocalizedString(@"ios.me.baa8eb5b", @"");
+    navigationController.tabBarItem.title = str;
+}
+
 
 - (AppNavigationController *)navigationControllerForTabType:(XYAppTabType)tabType {
     if (tabType >= self.rootTabBarController.viewControllers.count) {
@@ -162,6 +200,120 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
 - (BOOL)uiIsLoaded {
     return _rootTabBarController != nil;
 }
+
+#pragma mark - Themeable
+
+- (void)applyTheme:(XYTheme *)theme toNavigationControllers:(NSArray<UINavigationController *> *)navigationControllers {
+    NSMutableSet<UINavigationBar *> *navigationBars = [NSMutableSet setWithCapacity:navigationControllers.count + 1];
+    NSMutableSet<UIToolbar *> *toolbars = [NSMutableSet setWithCapacity:navigationControllers.count + 1];
+    NSMutableSet<UINavigationController *> *foundNavigationControllers = [NSMutableSet setWithCapacity:1];
+    
+    for (UINavigationController *nc in navigationControllers) {
+        for (UIViewController *vc in nc.viewControllers) {
+            if ([vc conformsToProtocol:@protocol(XYThemeable)]) {
+                [(id<XYThemeable>)vc applyTheme:theme];
+            }
+            if ([vc.presentedViewController isKindOfClass:[UINavigationController class]]) {
+                [foundNavigationControllers addObject:(UINavigationController *)vc.presentedViewController];
+            }
+        }
+        
+        if ([nc.presentedViewController isKindOfClass:[UINavigationController class]]) {
+            [foundNavigationControllers addObject:(UINavigationController *)nc.presentedViewController];
+        }
+        
+        UIToolbar *toolbar = nc.toolbar;
+        if (toolbar) {
+            [toolbars addObject:toolbar];
+        }
+        
+        UINavigationBar *navbar = nc.navigationBar;
+        if (navbar) {
+            [navigationBars addObject:navbar];
+        }
+        
+        if ([nc conformsToProtocol:@protocol(XYThemeable)]) {
+            [(id<XYThemeable>)nc applyTheme:theme];
+        }
+        
+        nc.view.tintColor = theme.colors.link;
+    }
+    
+    // Navigation bars
+    
+    [navigationBars addObject:[UINavigationBar appearance]];
+    UIImage *chromeBackgroundImage = [UIImage xy_imageFromColor:theme.colors.chromeBackground];
+    NSDictionary *navBarTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.chromeText};
+    UIImage *backChevron = [[UIImage xy_imageFlippedForRTLLayoutDirectionNamed:@"chevron-left"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    for (UINavigationBar *navigationBar in navigationBars) {
+        navigationBar.barTintColor = theme.colors.chromeBackground;
+        navigationBar.translucent = NO;
+        navigationBar.tintColor = theme.colors.chromeText;
+        [navigationBar setBackgroundImage:chromeBackgroundImage forBarMetrics:UIBarMetricsDefault];
+        [navigationBar setTitleTextAttributes:navBarTitleTextAttributes];
+        [navigationBar setBackIndicatorImage:backChevron];
+        [navigationBar setBackIndicatorTransitionMaskImage:backChevron];
+    }
+    
+    // Tool bars
+    for (UIToolbar *toolbar in toolbars) {
+        toolbar.barTintColor = theme.colors.chromeBackground;
+        [toolbar setShadowImage:[UIImage imageNamed:@"tabbar-shadow"] forToolbarPosition:UIBarPositionAny];
+        [toolbar setTranslucent:NO];
+    }
+    
+    [[UITextField appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTextColor:theme.colors.primaryText];
+    
+    if ([foundNavigationControllers count] > 0) {
+        [self applyTheme:theme toNavigationControllers:[foundNavigationControllers allObjects]];
+    }
+}
+
+- (void)applyTheme:(XYTheme *)theme {
+    self.theme = theme;
+    
+    self.view.backgroundColor = theme.colors.baseBackground;
+    self.view.tintColor = theme.colors.link;
+    
+    [self.exploreViewController applyTheme:theme];
+    
+    // Navigation controllers
+    NSMutableArray<UINavigationController *> *navigationControllers = [NSMutableArray arrayWithObjects:[self navigationControllerForTabType:XYAppTabTypeExplore], [self navigationControllerForTabType:XYAppTabTypeWish], [self navigationControllerForTabType:XYAppTabTypeStory], [self navigationControllerForTabType:XYAppTabTypeInbox], [self navigationControllerForTabType:XYAppTabTypeUserInfo], nil];
+    
+    [self applyTheme:theme toNavigationControllers:navigationControllers];
+    
+    // Tab bars
+    
+    NSArray<UITabBar *> *tabBars = @[self.rootTabBarController.tabBar, [UITabBar appearance]];
+    NSMutableArray<UITabBarItem *> *tabBarItems = [NSMutableArray arrayWithCapacity:5];
+    for (UITabBar *tabBar in tabBars) {
+        tabBar.barTintColor = theme.colors.chromeBackground;
+        if (@available(iOS 10.0, *)) {
+            [tabBar setUnselectedItemTintColor:theme.colors.unselected];
+        }
+        tabBar.translucent = NO;
+        tabBar.shadowImage = [UIImage imageNamed:@"tabbar-shadow"];
+        if (tabBar.items.count > 0) {
+            [tabBarItems addObjectsFromArray:tabBar.items];
+        }
+    }
+    
+    // Tab bar items
+    [tabBarItems addObject:[UITabBarItem appearance]];
+    UIFont *tabBarItemFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
+    NSDictionary *tabBarTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.secondaryText, NSFontAttributeName: tabBarItemFont};
+    NSDictionary *tabBarSelectedTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.link, NSFontAttributeName: tabBarItemFont};
+    for (UITabBarItem *item in tabBarItems) {
+        [item setTitleTextAttributes:tabBarTitleTextAttributes forState:UIControlStateNormal];
+        [item setTitleTextAttributes:tabBarSelectedTitleTextAttributes forState:UIControlStateSelected];
+    }
+    
+    [[UISwitch appearance] setOnTintColor:theme.colors.accent];
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+
 
 ////////////////////////////////////////////////////////////////////////
 #pragma mark - Notification
@@ -181,6 +333,24 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
 
 - (void)appDidEnterBackgroundWithNotification:(NSNotification *)notification {
     
+}
+
+////////////////////////////////////////////////////////////////////////
+#pragma mark - UIGestureRecognizerDelegate
+////////////////////////////////////////////////////////////////////////
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    for (XYAppTabType i = 0; i < XYAppTabCount; i++) {
+        UINavigationController *navigationController = [self navigationControllerForTabType:i];
+        if (navigationController.interactivePopGestureRecognizer == gestureRecognizer) {
+            return navigationController.viewControllers.count > 1;
+        }
+    }
+    return YES;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return ![gestureRecognizer isMemberOfClass:[UIScreenEdgePanGestureRecognizer class]];
 }
 
 @end

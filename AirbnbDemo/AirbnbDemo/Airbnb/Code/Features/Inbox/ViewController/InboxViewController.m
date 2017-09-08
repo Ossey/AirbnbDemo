@@ -10,6 +10,8 @@
 
 @interface InboxViewController ()
 
+@property (nonatomic, strong) XYTheme *theme;
+
 @end
 
 @implementation InboxViewController
@@ -33,5 +35,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - XYThemeable
+
+- (void)applyTheme:(XYTheme *)theme {
+    self.theme = theme;
+    if ([self viewIfLoaded] == nil) {
+        return;
+    }
+    self.view.backgroundColor = theme.colors.midBackground;
+    self.view.tintColor = theme.colors.link;
+}
+
 
 @end

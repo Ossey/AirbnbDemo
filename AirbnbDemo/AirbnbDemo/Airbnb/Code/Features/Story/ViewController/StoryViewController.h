@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StoryViewController : UIViewController
+@interface StoryViewController : UIViewController <XYThemeable>
 
 @end

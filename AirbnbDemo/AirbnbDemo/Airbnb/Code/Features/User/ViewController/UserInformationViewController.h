@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserInformationViewController : UIViewController
+@interface UserInformationViewController : UIViewController <XYThemeable>
 
 @end

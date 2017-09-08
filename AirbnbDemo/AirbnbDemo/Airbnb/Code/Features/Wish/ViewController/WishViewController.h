@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WishViewController : UIViewController
+@interface WishViewController : UIViewController <XYThemeable>
 
 @end
