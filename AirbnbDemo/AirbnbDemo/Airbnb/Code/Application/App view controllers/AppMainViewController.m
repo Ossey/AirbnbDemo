@@ -244,7 +244,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     [navigationBars addObject:[UINavigationBar appearance]];
     UIImage *chromeBackgroundImage = [UIImage xy_imageFromColor:theme.colors.chromeBackground];
     NSDictionary *navBarTitleTextAttributes = @{NSForegroundColorAttributeName: theme.colors.chromeText};
-    UIImage *backChevron = [[UIImage xy_imageFlippedForRTLLayoutDirectionNamed:@"chevron-left"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    UIImage *backChevron = [[UIImage xy_imageFlippedForRTLLayoutDirectionNamed:@"icon_chevron_large_left"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     for (UINavigationBar *navigationBar in navigationBars) {
         navigationBar.barTintColor = theme.colors.chromeBackground;
         navigationBar.translucent = NO;

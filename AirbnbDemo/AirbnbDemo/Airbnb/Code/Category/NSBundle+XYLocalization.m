@@ -10,7 +10,7 @@
 
 @implementation NSBundle (XYLocalization)
 + (NSBundle *)xy_localizationBundle {
-    return [NSBundle bundleWithIdentifier:@"com.ossey.AirbnbDemo1"] ?: [NSBundle mainBundle];
+    return [NSBundle bundleWithIdentifier:@"com.ossey.AirbnbDemo"] ?: [NSBundle mainBundle];
 }
 
 + (nonnull NSMutableDictionary *)xy_languageBundles {
