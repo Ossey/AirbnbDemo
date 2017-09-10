@@ -14,6 +14,7 @@
 #import "UserInformationViewController.h"
 #import "AppNavigationController.h"
 #import "XYTheme.h"
+#import "UIViewController+XYNavigationBar.h"
 
 
 typedef NS_ENUM(NSInteger, XYAppTabType) {
@@ -120,22 +121,27 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
         switch (i) {
             case XYAppTabTypeExplore: {
                 childVc = [ExploreViewController new];
+                self.exploreViewController = (ExploreViewController *)childVc;
                 break;
             }
             case XYAppTabTypeWish: {
                 childVc = [WishViewController new];
+                self.wishViewController = (WishViewController *)childVc;
                 break;
             }
             case XYAppTabTypeStory: {
                 childVc = [StoryViewController new];
+                self.storyViewController = (StoryViewController *)childVc;
                 break;
             }
             case XYAppTabTypeInbox: {
                 childVc = [InboxViewController new];
+                self.inboxViewController = (InboxViewController *)childVc;
                 break;
             }
             case XYAppTabTypeUserInfo: {
                 childVc = [UserInformationViewController new];
+                self.userInfoViewControler = (UserInformationViewController *)childVc;
                 break;
             }
             default:
@@ -154,6 +160,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     navigationController.tabBarItem.image = tabImage;
     NSString *str = XYLocalizedString(@"ios.explore.823bb461", @"");
     navigationController.tabBarItem.title = str;
+    self.exploreViewController.xy_navigationBar.title = str;
 }
 
 - (void)configureWishViewController {

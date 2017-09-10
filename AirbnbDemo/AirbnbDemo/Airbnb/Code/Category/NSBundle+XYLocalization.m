@@ -10,7 +10,7 @@
 
 @implementation NSBundle (XYLocalization)
 + (NSBundle *)xy_localizationBundle {
-    return [NSBundle bundleWithIdentifier:@"com.ossey.AirbnbDemo"] ?: [NSBundle mainBundle];
+    return [NSBundle bundleWithIdentifier:@"com.ossey.AirbnbDemo"];
 }
 
 + (nonnull NSMutableDictionary *)xy_languageBundles {
@@ -88,13 +88,13 @@ NSBundle *XYBundle() {
 }
 
 NSBundle *XYDefaultLocaleBundle() {
-    static NSBundle *__bundle;
+    static NSBundle *_defaultLocaleBundle;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSString *path = [XYBundle() pathForResource:[XYBundle() objectForInfoDictionaryKey:@"CFBundleDevelopmentRegion"] ofType:@"lproj"];
-        __bundle = [NSBundle bundleWithPath:path];
+        _defaultLocaleBundle = [NSBundle bundleWithPath:path];
     });
     
-    return __bundle;
+    return _defaultLocaleBundle;
 }

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180C74D51F643ED800E0336C /* XYSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C74D41F643ED800E0336C /* XYSearchView.m */; };
 		1821A5BF1F62B33E0099DA19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284EB1F61A83D005E67DE /* Localizable.strings */; };
 		1821A5D41F62D7410099DA19 /* UIImage+XYExtensionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821A5D31F62D7410099DA19 /* UIImage+XYExtensionStyle.m */; };
 		1821A5D51F62E1D00099DA19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284E91F61A83D005E67DE /* InfoPlist.strings */; };
-		1821A5D61F62E1F60099DA19 /* Localizable-Netverify.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284E71F61A83D005E67DE /* Localizable-Netverify.strings */; };
+		183A11901F656DF6003A7C35 /* UIViewController+XYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A118F1F656DF6003A7C35 /* UIViewController+XYNavigationBar.m */; };
+		183A11911F656F2B003A7C35 /* Localizable-Netverify.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284E71F61A83D005E67DE /* Localizable-Netverify.strings */; };
 		186284AC1F6194C4005E67DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AB48401F5BDAC70048B760 /* Assets.xcassets */; };
 		186284AF1F6195DF005E67DE /* NSBundle+XYLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 186284AE1F6195DF005E67DE /* NSBundle+XYLocalization.m */; };
 		18AB48411F5BDAD50048B760 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48391F5BDAB10048B760 /* main.m */; };
@@ -32,9 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180C74D31F643ED800E0336C /* XYSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYSearchView.h; sourceTree = "<group>"; };
+		180C74D41F643ED800E0336C /* XYSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYSearchView.m; sourceTree = "<group>"; };
 		1821A5D21F62D7410099DA19 /* UIImage+XYExtensionStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XYExtensionStyle.h"; sourceTree = "<group>"; };
 		1821A5D31F62D7410099DA19 /* UIImage+XYExtensionStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XYExtensionStyle.m"; sourceTree = "<group>"; };
 		18346FF51F5F280E008D6A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183A118E1F656DF6003A7C35 /* UIViewController+XYNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XYNavigationBar.h"; sourceTree = "<group>"; };
+		183A118F1F656DF6003A7C35 /* UIViewController+XYNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XYNavigationBar.m"; sourceTree = "<group>"; };
 		184F9CD61F5F180900FF40A1 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		184F9CDA1F5F180900FF40A1 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		184F9CDB1F5F180900FF40A1 /* kba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kba.png; sourceTree = "<group>"; };
@@ -658,6 +664,8 @@
 		18BA2A9E1F5F206C006290D4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				180C74D31F643ED800E0336C /* XYSearchView.h */,
+				180C74D41F643ED800E0336C /* XYSearchView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -804,6 +812,8 @@
 		18C0CAFC1F60EEB100EDA2C2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				183A118E1F656DF6003A7C35 /* UIViewController+XYNavigationBar.h */,
+				183A118F1F656DF6003A7C35 /* UIViewController+XYNavigationBar.m */,
 				18C0CAFD1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.h */,
 				18C0CAFE1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m */,
 				18C0CB011F60F50500EDA2C2 /* UIColor+XYExtension.h */,
@@ -925,7 +935,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1821A5D61F62E1F60099DA19 /* Localizable-Netverify.strings in Resources */,
+				183A11911F656F2B003A7C35 /* Localizable-Netverify.strings in Resources */,
 				1821A5D51F62E1D00099DA19 /* InfoPlist.strings in Resources */,
 				1821A5BF1F62B33E0099DA19 /* Localizable.strings in Resources */,
 				186284AC1F6194C4005E67DE /* Assets.xcassets in Resources */,
@@ -997,8 +1007,10 @@
 				18BA2AC31F5F2308006290D4 /* AppNavigationController.m in Sources */,
 				18BA2AB41F5F20FF006290D4 /* StoryViewController.m in Sources */,
 				18C0CB031F60F50500EDA2C2 /* UIColor+XYExtension.m in Sources */,
+				183A11901F656DF6003A7C35 /* UIViewController+XYNavigationBar.m in Sources */,
 				18C0CAFF1F60EF0000EDA2C2 /* NSUserDefaults+XYExtenions.m in Sources */,
 				1821A5D41F62D7410099DA19 /* UIImage+XYExtensionStyle.m in Sources */,
+				180C74D51F643ED800E0336C /* XYSearchView.m in Sources */,
 				18BA2ACA1F5F25D0006290D4 /* AppTabBarController.m in Sources */,
 				186284AF1F6195DF005E67DE /* NSBundle+XYLocalization.m in Sources */,
 				18BA2AB11F5F20F3006290D4 /* InboxViewController.m in Sources */,
