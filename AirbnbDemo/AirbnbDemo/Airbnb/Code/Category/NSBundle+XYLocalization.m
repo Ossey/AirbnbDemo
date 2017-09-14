@@ -10,7 +10,7 @@
 
 @implementation NSBundle (XYLocalization)
 + (NSBundle *)xy_localizationBundle {
-    return [NSBundle bundleWithIdentifier:@"com.ossey.AirbnbDemo"];
+    return [NSBundle bundleWithIdentifier:@"com.ossey.AirbnbDemo"] ?: [NSBundle mainBundle];
 }
 
 + (nonnull NSMutableDictionary *)xy_languageBundles {
@@ -22,9 +22,6 @@
     return xy_languageBundles;
 }
 
-+ (NSString *)twnLocalizationsDirectory {
-    return [SOURCE_ROOT_DIR stringByAppendingPathComponent:@"AirbnbDemo/AirbnbDemo/Airbnb"];
-}
 
 - (nullable NSBundle *)xy_languageBundleForLanguage:(nonnull NSString *)language {
     NSMutableDictionary *bundles = [NSBundle xy_languageBundles];
@@ -41,8 +38,12 @@
 
 @end
 
-NSString *XYLocalizedStringWithValue(NSString *key, NSString *_Nullable comment) {
-    return XYLocalizedStringWithDefaultValue(key, nil, nil, XYDefaultLocalizedValue(key), comment);
+NSString *XYLocalizedString(NSString *key) {
+    return XYLocalizedStringWithComment(key, nil);
+}
+
+NSString *XYLocalizedStringWithComment(NSString *key, NSString *_Nullable comment) {
+    return XYLocalizedStringWithDefaultValue(key, nil, nil, @"", comment);
 }
 
 NSString *XYLocalizedStringWithDefaultValue(NSString *key, NSString *_Nullable appLanguage, NSBundle *_Nullable bundle, NSString *value, NSString *_Nullable comment) {
@@ -65,16 +66,6 @@ NSString *XYLocalizedStringWithDefaultValue(NSString *key, NSString *_Nullable a
     return translation ? translation : @"";
 }
 
-NSString * getPreferredLanguage() {
-    
-    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-    NSArray * allLanguages = [defaults objectForKey:@"AppleLanguages"];
-    // iOS系统 本地语言是存在NSUserDefaults中的一个Key-Value；其中Value是一个数组；数组的第一个元素就是当前语言
-    NSString * preferredLang = [allLanguages objectAtIndex:0];
-    
-    return preferredLang;
-    
-}
 
 NSBundle *XYBundle() {
     static NSBundle *__bundle;

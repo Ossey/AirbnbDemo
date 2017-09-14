@@ -1,5 +1,5 @@
 //
-//  XYSearchView.h
+//  XYSearchNavigationView.h
 //  AirbnbDemo
 //
 //  Created by Swae on 09/09/2017.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XYSearchView : UIView
+@interface XYSearchNavigationView : UIView
+
+@property (nonatomic, copy) NSString *placeholderTitle;
 
 @end

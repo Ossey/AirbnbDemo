@@ -38,7 +38,7 @@
     static XYTheme *theme = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        theme = [[self alloc] initWithColors:[XYColors light] preferredStatusBarStyle:UIStatusBarStyleDefault blurEffectStyle:UIBlurEffectStyleLight keyboardAppearance:UIKeyboardAppearanceLight imageOpacity:1.0 searchBarBackgroundImage:nil name:@"standard" displayName:XYLocalizedString(@"", @"")];
+        theme = [[self alloc] initWithColors:[XYColors light] preferredStatusBarStyle:UIStatusBarStyleDefault blurEffectStyle:UIBlurEffectStyleLight keyboardAppearance:UIKeyboardAppearanceLight imageOpacity:1.0 searchBarBackgroundImage:nil name:@"standard" displayName:XYLocalizedString(@"")];
     });
     return theme;
 }

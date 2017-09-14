@@ -158,18 +158,17 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     UIImage *tabImage = [UIImage imageNamed:@"tab_search_icon"];
     AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeExplore];
     navigationController.tabBarItem.image = tabImage;
-//    NSString *str = XYLocalizedString(@"ios.explore.823bb461", @"");
-    NSString *str =XYLocalizedStringWithValue(@"ios.explore.823bb461", @"");
+    NSString *str = XYLocalizedString(@"ios.explore.823bb461");
     navigationController.tabBarItem.title = str;
-    self.exploreViewController.xy_navigationBar.title = str;
-    self.exploreViewController.xy_navigationBar.titleColor = [UIColor blackColor];
+//    self.exploreViewController.xy_navigationBar.title = str;
+//    self.exploreViewController.xy_navigationBar.titleColor = [UIColor blackColor];
 }
 
 - (void)configureWishViewController {
     UIImage *tabImage = [UIImage imageNamed:@"tab_stories_icon"];
     AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeWish];
     navigationController.tabBarItem.image = tabImage;
-    NSString *str = XYLocalizedString(@"ios.wishlist.cfa36f00", @"");
+    NSString *str = XYLocalizedString(@"ios.wishlist.cfa36f00");
     navigationController.tabBarItem.title = str;
 }
 
@@ -177,7 +176,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     UIImage *tabImage = [UIImage imageNamed:@"tab_saved_icon"];
     AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeStory];
     navigationController.tabBarItem.image = tabImage;
-    NSString *str = XYLocalizedString(@"ios.stories.f43edcad", @"");
+    NSString *str = XYLocalizedString(@"ios.stories.f43edcad");
     navigationController.tabBarItem.title = str;
 }
 
@@ -185,7 +184,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     UIImage *tabImage = [UIImage imageNamed:@"tab_inbox_icon"];
     AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeInbox];
     navigationController.tabBarItem.image = tabImage;
-    NSString *str = XYLocalizedString(@"ios.inbox.d6600ac1", @"");
+    NSString *str = XYLocalizedString(@"ios.inbox.d6600ac1");
     navigationController.tabBarItem.title = str;
 }
 
@@ -193,7 +192,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     UIImage *tabImage = [UIImage imageNamed:@"tab_profile_icon"];
     AppNavigationController *navigationController = [self navigationControllerForTabType:XYAppTabTypeUserInfo];
     navigationController.tabBarItem.image = tabImage;
-    NSString *str = XYLocalizedString(@"ios.me.baa8eb5b", @"");
+    NSString *str = XYLocalizedString(@"ios.me.baa8eb5b");
     navigationController.tabBarItem.title = str;
 }
 

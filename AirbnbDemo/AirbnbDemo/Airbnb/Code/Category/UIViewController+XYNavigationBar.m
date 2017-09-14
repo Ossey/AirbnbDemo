@@ -173,7 +173,7 @@
     if (orientation == UIDeviceOrientationPortrait) {
         navigationBarHeight = self.xy_navigationBarHeight.portraitOrientationHeight;
     } else {
-        navigationBarHeight = self.xy_navigationBarHeight.otherOrientationPortrait;
+        navigationBarHeight = self.xy_navigationBarHeight.otherOrientationHeight;
     }
     
     NSInteger foundIndex = [self.xy_navigationBar.constraints indexOfObjectPassingTest:^BOOL(__kindof NSLayoutConstraint * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -328,7 +328,7 @@
     }
     NSParameterAssert(!titleView.superview);
     _titleView = titleView;
-    if (![_titleButton isEqual:_titleView]) {
+    if (_titleButton && ![_titleButton isEqual:_titleView]) {
         // 为了避免自定义的titleView与titleButton产生冲突
         _title = nil;
         [_titleButton removeFromSuperview];

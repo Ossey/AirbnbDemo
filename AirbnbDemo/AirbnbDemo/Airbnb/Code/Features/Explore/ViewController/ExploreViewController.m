@@ -7,6 +7,8 @@
 //
 
 #import "ExploreViewController.h"
+#import "UIViewController+XYNavigationBar.h"
+#import "XYSearchNavigationView.h"
 
 @interface ExploreViewController ()
 
@@ -21,6 +23,15 @@
     // Do any additional setup after loading the view.
     
     [self applyTheme:self.theme];
+    
+    [self setupUI];
+}
+
+- (void)setupUI {
+    
+    XYSearchNavigationView *customView = [XYSearchNavigationView new];
+    self.xy_navigationBar.titleView = customView;
+    customView.placeholderTitle = @"搜索";
 }
 
 - (void)didReceiveMemoryWarning {
