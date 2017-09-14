@@ -52,14 +52,14 @@ NSString *XYLocalizedStringWithDefaultValue(NSString *key, NSString *_Nullable a
     
     NSString *translation = nil;
     if (appLanguage == nil) {
-        translation = [bundle localizedStringForKey:key value:nil table:nil];
+        translation = [bundle localizedStringForKey:key value:nil table:@"Localizable"];
     } else {
         NSBundle *languageBundle = [bundle xy_languageBundleForLanguage:appLanguage];
-        translation = [languageBundle localizedStringForKey:key value:nil table:nil];
+        translation = [languageBundle localizedStringForKey:key value:nil table:@"Localizable"];
     }
     
     if (!translation || [translation isEqualToString:key] || (translation.length == 0)) {
-        translation = [XYDefaultLocaleBundle() localizedStringForKey:key value:value table:nil];
+        translation = [XYDefaultLocaleBundle() localizedStringForKey:key value:value table:@"Localizable"];
     }
     
     return translation ? translation : @"";
