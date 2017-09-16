@@ -26,7 +26,7 @@
 /** 导航条左侧返回按钮的文字，这个属性在当前控制器下有效 */
 @property (nonatomic, copy) NSString *leftButtonTitle;
 /** contentView 顶部距离父控件的间距，默认：横屏0，竖屏-20.0 */
-@property (nonatomic, assign) CGFloat contentViewTopConst;
+@property (nonatomic, assign) CGFloat backgroundViewConstant;
 @property (nonatomic, strong) UIImageView *backgroundView;
 
 @end
@@ -185,11 +185,11 @@
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if (orientation == UIDeviceOrientationPortrait) {
         navigationBarHeight = self.xy_navigationBarHeight.portraitOrientationHeight;
-        navigationBar.contentViewTopConst = -20.0;
+        navigationBar.backgroundViewConstant = -20.0;
         self.xy_navigationBarTopConstant = 20.0;
     } else {
         navigationBarHeight = self.xy_navigationBarHeight.otherOrientationHeight;
-        navigationBar.contentViewTopConst = 0.0;
+        navigationBar.backgroundViewConstant = 0.0;
         self.xy_navigationBarTopConstant = 0.0;
     }
     
@@ -312,18 +312,15 @@
 
 #pragma mark - Set \ Get
 
-- (void)setContentViewTopConst:(CGFloat)contentViewTopConst {
-    _contentViewTopConst = contentViewTopConst;
+- (void)setBackgroundViewConstant:(CGFloat)backgroundViewConstant {
+    _backgroundViewConstant = backgroundViewConstant;
     if (!self.constraints.count) {
         return;
     }
-    NSPredicate *contentViewTopPredicate = [NSPredicate predicateWithFormat:@"identifier == %@", @"XYNavigationBarContentViewTopConstraint"];
-    NSLayoutConstraint *contentViewTopConstraint = [self.constraints filteredArrayUsingPredicate:contentViewTopPredicate].firstObject;
-    contentViewTopConstraint.constant = contentViewTopConst;
     
     NSPredicate *backgroundTopPredicate = [NSPredicate predicateWithFormat:@"identifier == %@", @"XYNavigationBarBackgroundTopConstraint"];
     NSLayoutConstraint *backgroundTopConstraint = [self.constraints filteredArrayUsingPredicate:backgroundTopPredicate].firstObject;
-    backgroundTopConstraint.constant = contentViewTopConst;
+    backgroundTopConstraint.constant = backgroundViewConstant;
 }
 
 - (UIColor *)titleColor {
@@ -497,8 +494,9 @@
         contentView.backgroundColor = [UIColor clearColor];
         contentView.userInteractionEnabled = YES;
         contentView.translatesAutoresizingMaskIntoConstraints = NO;
-        [self.backgroundView addSubview:contentView];
+        [self addSubview:contentView];
         _contentView = contentView;
+        [self insertSubview:contentView aboveSubview:self.backgroundView];
     }
     return _contentView;
 }
@@ -520,7 +518,8 @@
         backgroundView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:backgroundView];
         _backgroundView = backgroundView;
-        _backgroundView.image = [UIImage xy_imageFromColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
+        _backgroundView.image = [[self class] xy_imageFromColor:[UIColor colorWithWhite:0.8 alpha:0.6]];
+        [self insertSubview:backgroundView atIndex:0];
     }
     return _backgroundView;
 }
@@ -570,9 +569,9 @@
     [self.backgroundView removeConstraints:self.backgroundView.constraints];
     
     NSDictionary *views = NSDictionaryOfVariableBindings(_contentView, _shadowLineView, _backgroundView);
-    NSDictionary *metrics = @{@"leftButtonWidth": @(self.leftButton.intrinsicContentSize.width+10), @"leftButtonLeftM": @10, @"leftBtnH": @44, @"rightBtnH": @44, @"rightBtnRightM": @10, @"rightButtonWidth": @(self.rightButton.intrinsicContentSize.width+10), @"shadowLineHeight": @(self.shadowLineHeight), @"contentViewTopConst": @(self.contentViewTopConst)};
+    NSDictionary *metrics = @{@"leftButtonWidth": @(self.leftButton.intrinsicContentSize.width+10), @"leftButtonLeftM": @10, @"leftBtnH": @44, @"rightBtnH": @44, @"rightBtnRightM": @10, @"rightButtonWidth": @(self.rightButton.intrinsicContentSize.width+10), @"shadowLineHeight": @(self.shadowLineHeight), @"backgroundViewConstant": @(self.backgroundViewConstant)};
     
-    NSLayoutConstraint *backgroundTopConstraint = [NSLayoutConstraint constraintWithItem:self.backgroundView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:self.contentViewTopConst];
+    NSLayoutConstraint *backgroundTopConstraint = [NSLayoutConstraint constraintWithItem:self.backgroundView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:self.backgroundViewConstant];
     backgroundTopConstraint.identifier = @"XYNavigationBarBackgroundTopConstraint";
     // backgroundView
     NSArray *backgroundViewConstraints = @[
@@ -590,10 +589,8 @@
     [self addConstraints:[backgroundViewConstraints valueForKeyPath:@"@unionOfArrays.self"]];
     
     // contentView
-    NSLayoutConstraint *contentViewTopConstraint = [NSLayoutConstraint constraintWithItem:self.contentView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:self.contentViewTopConst];
-    contentViewTopConstraint.identifier = @"XYNavigationBarContentViewTopConstraint";
     NSArray *contentViewConstraints = @[
-                                        [NSLayoutConstraint constraintsWithVisualFormat:@"V:[_contentView]|"
+                                        [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_contentView]|"
                                                                                 options:0
                                                                                 metrics:nil
                                                                                   views:views],
@@ -601,7 +598,6 @@
                                                                                 options:0
                                                                                 metrics:nil
                                                                                   views:views],
-                                        @[contentViewTopConstraint],
                                         ];
     
     [self addConstraints:[contentViewConstraints valueForKeyPath:@"@unionOfArrays.self"]];
@@ -721,9 +717,9 @@
     self.shadowLineHeight = 0.5;
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     if (orientation == UIDeviceOrientationPortrait) {
-        self.contentViewTopConst = -20.0;
+        self.backgroundViewConstant = -20.0;
     } else {
-        self.contentViewTopConst = 0.0;
+        self.backgroundViewConstant = 0.0;
     }
     
 }

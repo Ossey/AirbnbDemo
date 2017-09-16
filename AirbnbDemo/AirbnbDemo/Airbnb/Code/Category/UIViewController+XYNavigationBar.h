@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XYNavigationBar : UIView
 
+@property (nonatomic, strong) UIView *customView;
+
 @property (nonatomic, strong, readonly) UIView *shadowLineView;
 
 @property (nonatomic, assign) CGFloat shadowLineHeight;
