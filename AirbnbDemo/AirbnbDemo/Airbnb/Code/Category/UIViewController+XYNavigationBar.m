@@ -278,6 +278,8 @@
     
     XYNavigationBarHeight barHeight = {64.0, 44.0};
     self.xy_navigationBarHeight = barHeight;
+    
+    [self.leftButton addTarget:self action:@selector(leftBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -493,7 +495,6 @@
         _leftButton = leftButton;
         leftButton.hidden = self.isHiddenLeftButton;
         leftButton.translatesAutoresizingMaskIntoConstraints = NO;
-        [leftButton addTarget:self action:@selector(leftBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _leftButton;
 }
@@ -531,7 +532,7 @@
         backgroundView.translatesAutoresizingMaskIntoConstraints = NO;
         [self addSubview:backgroundView];
         _backgroundImageView = backgroundView;
-//        _backgroundImageView.image = [[self class] xy_imageFromColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
+        //        _backgroundImageView.image = [[self class] xy_imageFromColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
         [self insertSubview:backgroundView aboveSubview:self.backgroundView];
     }
     return _backgroundImageView;
@@ -762,7 +763,7 @@
         if ([self canShowTitleView]) {
             NSDictionary *views = NSDictionaryOfVariableBindings(_titleView);
             [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.titleView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
-            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_titleView(rightBtnH)]|" options:kNilOptions metrics:metrics views:views]];
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleView]|" options:kNilOptions metrics:metrics views:views]];
             if ([self canShowLeftButton] && !self.isHiddenLeftButton) {
                 [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:self.titleView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.leftButton attribute:NSLayoutAttributeRight multiplier:1.0 constant:10.0]];
             }
@@ -951,7 +952,7 @@
         return res;
     }];
     if (foundIdx != NSNotFound) {
-         XYNavigationBar *navigationBar = self.subviews[foundIdx];
+        XYNavigationBar *navigationBar = self.subviews[foundIdx];
         [self bringSubviewToFront:navigationBar];
     }
     
@@ -991,3 +992,5 @@
 
 
 @end
+
+
