@@ -7,7 +7,7 @@
 //
 
 #import "ExploreViewController.h"
-#import "UIViewController+XYNavigationBar.h"
+#import "UIViewController+XYCustomNavigationBar.h"
 #import "XYSearchNavigationView.h"
 #import "SearchViewController.h"
 

@@ -1,12 +1,12 @@
 //
-//  UIViewController+XYNavigationBar.m
+//  UIViewController+XYCustomNavigationBar.m
 //  XYCustomNavigationBar
 //
 //  Created by Swae on 10/09/2017.
 //  Copyright © 2017 Ossey. All rights reserved.
 //
 
-#import "UIViewController+XYNavigationBar.h"
+#import "UIViewController+XYCustomNavigationBar.h"
 #import <objc/runtime.h>
 
 @interface NSObject (XYSwizzlingExtension)
@@ -58,7 +58,7 @@
 
 @end
 
-@implementation UIViewController (XYNavigationBar)
+@implementation UIViewController (XYCustomNavigationBar)
 
 + (void)load {
     
@@ -80,8 +80,13 @@
     }
     // 控制model和push时左侧返回按钮默认的隐藏和显示
     if (self.presentedViewController) {
-        if ([self.presentedViewController isKindOfClass:[UIViewController class]] && self.presentedViewController.navigationController.childViewControllers.count <= 1) {
-            navigationBar.hiddenLeftButton = YES;
+        if ([self.presentedViewController isKindOfClass:[UIViewController class]]) {
+            if (self.presentedViewController.navigationController && self.presentedViewController.navigationController.childViewControllers.count <= 1) {
+                navigationBar.hiddenLeftButton = YES;
+            }
+            else {
+                navigationBar.hiddenLeftButton = self.navigationController.childViewControllers.count <= 1;
+            }
         } else if ([self.presentedViewController isKindOfClass:[UINavigationController class]] && self.childViewControllers.count <= 1) {
             navigationBar.hiddenLeftButton = YES;
         }
@@ -571,6 +576,14 @@
     [self.leftButton setImage:image forState:state];
 }
 
+- (void)setBackgroundImage:(UIImage *)backgroundImage {
+    self.backgroundImageView.image = backgroundImage;
+}
+
+- (UIImage *)backgroundImage {
+    return self.backgroundImage;
+}
+
 - (void)setShadowLineHeight:(CGFloat)shadowLineHeight {
     if (_shadowLineHeight == shadowLineHeight) {
         return;
@@ -679,12 +692,18 @@
     [self addConstraints:[backgroundViewConstraints valueForKeyPath:@"@unionOfArrays.self"]];
     
     // backgroundImageView
-    [self addConstraints:@[
-                           [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0],
-                           [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0],
-                           [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0],
-                           [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0],
-                           ]];
+    if ([self canShowBackgroundImageView]) {
+        [self addConstraints:@[
+                               [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0],
+                               [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0],
+                               [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0],
+                               [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.backgroundView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0],
+                               ]];
+    }
+    else {
+        [_backgroundImageView removeFromSuperview];
+        _backgroundImageView = nil;
+    }
     
     // visualEffectView
     [self addConstraints:@[
@@ -797,6 +816,10 @@
         return _leftButton.superview != nil;
     }
     return NO;
+}
+
+- (BOOL)canShowBackgroundImageView {
+    return _backgroundImageView.image && _backgroundImageView.superview;
 }
 
 - (BOOL)canShowTitleButton {
@@ -992,5 +1015,4 @@
 
 
 @end
-
 

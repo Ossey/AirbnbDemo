@@ -7,7 +7,7 @@
 //
 
 #import "SearchViewController.h"
-#import "UIViewController+XYNavigationBar.h"
+#import "UIViewController+XYCustomNavigationBar.h"
 
 @interface SearchViewController () <XYThemeable>
 

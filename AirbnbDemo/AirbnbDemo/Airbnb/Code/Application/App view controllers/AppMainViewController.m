@@ -14,7 +14,7 @@
 #import "UserInformationViewController.h"
 #import "AppNavigationController.h"
 #import "XYTheme.h"
-#import "UIViewController+XYNavigationBar.h"
+#import "UIViewController+XYCustomNavigationBar.h"
 
 
 typedef NS_ENUM(NSInteger, XYAppTabType) {
