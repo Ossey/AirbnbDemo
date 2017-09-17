@@ -45,6 +45,8 @@
 
 @property (nonatomic) CGFloat xy_navigationBarTopConstant;
 
+@property (nonatomic, copy) void (^xy_willChangeStatusBarOrientationBlock)(void);
+
 - (instancetype)initWithView:(UIView *)view;
 
 - (void)resetSubviews;
@@ -97,7 +99,6 @@
     
 }
 
-
 - (BOOL)xy_automaticallyAdjustsScrollViewInsets {
     BOOL res = [self xy_automaticallyAdjustsScrollViewInsets];
     XYNavigationBar *navigationBar = objc_getAssociatedObject(self, @selector(xy_navigationBar));
@@ -112,11 +113,10 @@
             if (res) {
                 if (orientation == UIDeviceOrientationPortrait) {
                     UIEdgeInsetsTop = self.xy_navigationBar.xy_navigationBarHeight.portraitOrientationHeight;
-                    contentOffsetY = -UIEdgeInsetsTop - 20.0;
                 } else {
                     UIEdgeInsetsTop = self.xy_navigationBar.xy_navigationBarHeight.otherOrientationHeight;
-                    contentOffsetY = -UIEdgeInsetsTop;
                 }
+                contentOffsetY = -UIEdgeInsetsTop - 20.0;
             }
             else {
                 UIEdgeInsetsTop = 0.0;
@@ -132,6 +132,18 @@
 }
 
 - (void)xy_willChangeStatusBarOrientation {
+    
+    XYNavigationBar *navigationBar = objc_getAssociatedObject(self, @selector(xy_navigationBar));
+    if (!navigationBar) {
+        return;
+    }
+    for (UIView *view in self.view.subviews) {
+        if ([view isKindOfClass:[UIScrollView class]]) {
+            UIScrollView *scrollView = (UIScrollView *)view;
+            scrollView.onceInstanceContentOffsetOrContentInset = NO;
+        }
+    }
+    
     [self xy_automaticallyAdjustsScrollViewInsets];
 }
 
@@ -148,6 +160,10 @@
     __weak typeof(self) selfVc = self;
     navigationBar.leftButtonClick = ^{
         [selfVc backBtnClick];
+    };
+    
+    navigationBar.xy_willChangeStatusBarOrientationBlock = ^{
+        [selfVc xy_willChangeStatusBarOrientation];
     };
     
     return navigationBar;
@@ -587,6 +603,9 @@
 #pragma mark - Notification
 
 - (void)xy_willChangeStatusBarOrientationNotification {
+    if (self.xy_willChangeStatusBarOrientationBlock) {
+        self.xy_willChangeStatusBarOrientationBlock();
+    }
     
     CGFloat navigationBarHeight = 0.0;
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
