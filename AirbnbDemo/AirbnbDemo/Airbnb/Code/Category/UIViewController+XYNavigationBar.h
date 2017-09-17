@@ -44,6 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) void (^leftButtonClick)(void);
 
+@property (nonatomic, assign) XYNavigationBarHeight xy_navigationBarHeight;
+
 - (void)setLeftButtonTitle:(nullable NSString *)title image:(nullable UIImage *)image forState:(UIControlState)state;
 
 @end
@@ -53,7 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIViewController (XYNavigationBar)
 
 @property (nonatomic, readonly) XYNavigationBar *xy_navigationBar;
-@property (nonatomic) XYNavigationBarHeight xy_navigationBarHeight;
 
 - (void)backBtnClick;
 

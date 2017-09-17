@@ -12,4 +12,6 @@
 
 @property (nonatomic, copy) NSString *placeholderTitle;
 
+@property (nonatomic, copy) void (^searchClickBlock)(XYSearchNavigationView *view);
+
 @end

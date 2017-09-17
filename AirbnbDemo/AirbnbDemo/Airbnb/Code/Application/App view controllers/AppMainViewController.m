@@ -160,8 +160,7 @@ static NSInteger XYAppTabCount = XYAppTabTypeUserInfo + 1;
     navigationController.tabBarItem.image = tabImage;
     NSString *str = XYLocalizedString(@"ios.explore.823bb461");
     navigationController.tabBarItem.title = str;
-//    self.exploreViewController.xy_navigationBar.title = str;
-//    self.exploreViewController.xy_navigationBar.titleColor = [UIColor blackColor];
+
 }
 
 - (void)configureWishViewController {

@@ -12,6 +12,7 @@
 
 @property (nonatomic, weak) UIImageView *searchIconView;
 @property (nonatomic, weak) UILabel *placeholderLbael;
+@property (nonatomic, weak) UIView *contentView;
 
 @end
 
@@ -28,21 +29,25 @@
 
 - (void)setupViews {
     
-    self.searchIconView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.placeholderLbael.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.contentView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnContentView:)]];
     
-    NSLayoutConstraint *searchIconTopConstraint = [NSLayoutConstraint constraintWithItem:self.searchIconView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:15.0];
+    NSDictionary *viewDict = @{@"searchIconView": self.searchIconView, @"placeholderLbael": self.placeholderLbael, @"contentView": self.contentView};
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-(20.0)-[contentView]-(20.0)-|" options:kNilOptions metrics:nil views:viewDict]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(15.0)-[contentView]-(15.0)-|" options:kNilOptions metrics:nil views:viewDict]];
+    
+    NSLayoutConstraint *searchIconWidthConstraint = [NSLayoutConstraint constraintWithItem:self.searchIconView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:15.0];
     NSLayoutConstraint *searchIconHeightConstraint = [NSLayoutConstraint constraintWithItem:self.searchIconView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.searchIconView attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *searchIconBottomConstraint = [NSLayoutConstraint constraintWithItem:self.searchIconView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-15.0];
-     NSLayoutConstraint *placeholderLbaelTopConstraint = [NSLayoutConstraint constraintWithItem:self.placeholderLbael attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *placeholderLbaelBottomConstraint = [NSLayoutConstraint constraintWithItem:self.placeholderLbael attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
-    NSDictionary *viewDict = @{@"searchIconView": self.searchIconView, @"placeholderLbael": self.placeholderLbael};
-    NSArray *viewConstraintsH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(15.0)-[searchIconView]-(15.0)-[placeholderLbael]-(15.0)-|" options:kNilOptions metrics:nil views:viewDict];
-    NSArray *allConstrains = @[@[searchIconTopConstraint, searchIconHeightConstraint, searchIconBottomConstraint, placeholderLbaelBottomConstraint, placeholderLbaelTopConstraint],viewConstraintsH];
+    NSLayoutConstraint *searchIconCenterY = [NSLayoutConstraint constraintWithItem:self.searchIconView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0];
+    NSLayoutConstraint *placeholderLbaelTopConstraint = [NSLayoutConstraint constraintWithItem:self.placeholderLbael attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
+    NSLayoutConstraint *placeholderLbaelBottomConstraint = [NSLayoutConstraint constraintWithItem:self.placeholderLbael attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
+    
+    NSArray *viewConstraintsH = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(20.0)-[searchIconView]-(20.0)-[placeholderLbael]-(20.0)-|" options:kNilOptions metrics:nil views:viewDict];
+    NSArray *allConstrains = @[@[searchIconWidthConstraint, searchIconHeightConstraint, searchIconCenterY, placeholderLbaelBottomConstraint, placeholderLbaelTopConstraint],viewConstraintsH];
     
     [self addConstraints:[allConstrains valueForKeyPath:@"@unionOfArrays.self"]];
     
 }
+
 
 - (void)setPlaceholderTitle:(NSString *)placeholderTitle {
     _placeholderLbael.text = placeholderTitle;
@@ -55,9 +60,10 @@
 - (UIImageView *)searchIconView {
     if (!_searchIconView) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        [self addSubview:imageView];
+        [self.contentView addSubview:imageView];
         _searchIconView = imageView;
         imageView.image = [UIImage imageNamed:@"new_explore_search_icon"];
+        _searchIconView.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return _searchIconView;
 }
@@ -65,10 +71,37 @@
 - (UILabel *)placeholderLbael {
     if (!_placeholderLbael) {
         UILabel *label = [[UILabel alloc] init];
-        [self addSubview:label];
+        [self.contentView addSubview:label];
         _placeholderLbael = label;
+        _placeholderLbael.translatesAutoresizingMaskIntoConstraints = NO;
+        _placeholderLbael.textColor = [UIColor colorWithWhite:0.5 alpha:0.8];
     }
     return _placeholderLbael;
+}
+
+- (UIView *)contentView {
+    if (!_contentView) {
+        UIView *view = [[UIView alloc] init];
+        _contentView = view;
+        [self addSubview:view];
+        view.layer.masksToBounds = YES;
+        view.layer.cornerRadius = 3.5;
+        view.layer.borderColor = [UIColor colorWithWhite:0.7 alpha:0.8].CGColor;
+        view.backgroundColor = [UIColor whiteColor];
+        view.layer.borderWidth = 1.0;
+        view.translatesAutoresizingMaskIntoConstraints = NO;
+    }
+    return _contentView;
+}
+
+////////////////////////////////////////////////////////////////////////
+#pragma mark -
+////////////////////////////////////////////////////////////////////////
+
+- (void)tapOnContentView:(UITapGestureRecognizer *)tap {
+    if (self.searchClickBlock) {
+        self.searchClickBlock(self);
+    }
 }
 
 @end

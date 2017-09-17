@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.xy_navigationBar.xy_navigationBarHeight = (XYNavigationBarHeight){74.0, 64.0};
     [self applyTheme:self.theme];
     
     [self setupUI];
@@ -30,8 +31,11 @@
 - (void)setupUI {
     
     XYSearchNavigationView *customView = [XYSearchNavigationView new];
-    self.xy_navigationBar.titleView = customView;
+    self.xy_navigationBar.customView = customView;
     customView.placeholderTitle = @"搜索";
+    customView.searchClickBlock = ^(XYSearchNavigationView *view) {
+        
+    };
 }
 
 - (void)didReceiveMemoryWarning {
