@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     [self applyTheme:self.theme];
     
     [self setupUI];
@@ -87,10 +87,10 @@
         tableView.dataSource = self;
         [self.view addSubview:_tableView];
         tableView.translatesAutoresizingMaskIntoConstraints = NO;
-        NSDictionary *viewDict = @{@"tableView": tableView, @"navigationBar": self.xy_navigationBar};
+        NSDictionary *viewDict = @{@"tableView": tableView};
         NSArray *tableViewConstraints = @[
                                           [NSLayoutConstraint constraintsWithVisualFormat:@"|[tableView]|" options:kNilOptions metrics:nil views:viewDict],
-                                          [NSLayoutConstraint constraintsWithVisualFormat:@"V:[navigationBar]-(0.0)-[tableView]|" options:kNilOptions metrics:nil views:viewDict]
+                                          [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[tableView]|" options:kNilOptions metrics:nil views:viewDict]
                                           ];
         [self.view addConstraints:[tableViewConstraints valueForKeyPath:@"@unionOfArrays.self"]];
     }
