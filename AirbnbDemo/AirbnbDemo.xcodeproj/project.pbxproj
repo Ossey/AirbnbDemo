@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		180C74D51F643ED800E0336C /* XYSearchNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180C74D41F643ED800E0336C /* XYSearchNavigationView.m */; };
+		180E09ED1F6E6F6A0014F96B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E09EC1F6E6F6A0014F96B /* SearchViewController.m */; };
 		1821A5BF1F62B33E0099DA19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284EB1F61A83D005E67DE /* Localizable.strings */; };
 		1821A5D41F62D7410099DA19 /* UIImage+XYExtensionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821A5D31F62D7410099DA19 /* UIImage+XYExtensionStyle.m */; };
 		1821A5D51F62E1D00099DA19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186284E91F61A83D005E67DE /* InfoPlist.strings */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		180C74D31F643ED800E0336C /* XYSearchNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYSearchNavigationView.h; sourceTree = "<group>"; };
 		180C74D41F643ED800E0336C /* XYSearchNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYSearchNavigationView.m; sourceTree = "<group>"; };
+		180E09EB1F6E6F6A0014F96B /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		180E09EC1F6E6F6A0014F96B /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		1821A5D21F62D7410099DA19 /* UIImage+XYExtensionStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XYExtensionStyle.h"; sourceTree = "<group>"; };
 		1821A5D31F62D7410099DA19 /* UIImage+XYExtensionStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XYExtensionStyle.m"; sourceTree = "<group>"; };
 		18346FF51F5F280E008D6A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -688,6 +691,8 @@
 			children = (
 				18BA2AAC1F5F20B8006290D4 /* ExploreViewController.h */,
 				18BA2AAD1F5F20B8006290D4 /* ExploreViewController.m */,
+				180E09EB1F6E6F6A0014F96B /* SearchViewController.h */,
+				180E09EC1F6E6F6A0014F96B /* SearchViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1013,6 +1018,7 @@
 			files = (
 				18BA2AAE1F5F20B8006290D4 /* ExploreViewController.m in Sources */,
 				18BA2ABF1F5F2221006290D4 /* HTTPRequest.m in Sources */,
+				180E09ED1F6E6F6A0014F96B /* SearchViewController.m in Sources */,
 				18BA2ABA1F5F2148006290D4 /* WishViewController.m in Sources */,
 				18AB48441F5BDB210048B760 /* AppDelegate.m in Sources */,
 				18C0CAFB1F60EE3200EDA2C2 /* XYTheme.m in Sources */,
