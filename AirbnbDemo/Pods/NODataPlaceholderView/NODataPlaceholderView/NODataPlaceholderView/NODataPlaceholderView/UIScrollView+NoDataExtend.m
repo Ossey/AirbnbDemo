@@ -48,7 +48,6 @@ __unused NS_INLINE NoDataPlaceholderDelegateFlags NoDataPlaceholderDelegateFlags
 
 typedef NSString * ImplementationKey NS_EXTENSIBLE_STRING_ENUM;
 
-static NSString * const NoDataPlaceholderBackgroundImageViewAnimationKey = @"NoDataPlaceholderBackgroundImageViewAnimation";
 static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
 
 #pragma mark *** _WeakObjectContainer ***
@@ -116,6 +115,8 @@ static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
 @property (nonatomic, assign) UIEdgeInsets imageEdgeInsets;
 @property (nonatomic, assign) UIEdgeInsets detailEdgeInsets;
 @property (nonatomic, assign) UIEdgeInsets buttonEdgeInsets;
+/** imageView的size, 有的时候图片本身太大，导致imageView的尺寸并不是我们想要的，可以通过此方法设置, 当为CGSizeZero时不设置,默认为CGSizeZero */
+@property (nonatomic, assign) CGSize imageViewSize;
 /** tap手势回调block */
 @property (nonatomic, copy) void (^tapGestureRecognizerBlock)(UITapGestureRecognizer *tap);
 
@@ -145,11 +146,6 @@ static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
 @end
 
 @implementation UIScrollView (NoDataExtend)
-
-////////////////////////////////////////////////////////////////////////
-#pragma mark - Public methods
-////////////////////////////////////////////////////////////////////////
-
 
 ////////////////////////////////////////////////////////////////////////
 #pragma mark - Private methods (delegate private api)
@@ -327,6 +323,15 @@ static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
     return offset;
 }
 
+- (CGSize)xy_noDataPlaceholderImageViewSize {
+    CGSize imageViewSize = CGSizeZero;
+    if (self.noDataPlaceholderDelegate && [self.noDataPlaceholderDelegate respondsToSelector:@selector(imageViewSizeForNoDataPlaceholder:)]) {
+        imageViewSize = [self.noDataPlaceholderDelegate imageViewSizeForNoDataPlaceholder:self];
+    }
+    return imageViewSize;
+}
+
+
 - (UILabel *)xy_noDataPlacehodlerTitleLabel {
     UILabel *titleLabel = nil;
     if (self.noDataTextLabel) {
@@ -477,18 +482,8 @@ static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
             noDataPlaceholderView = [self setupNoDataPlaceholderView];
         }
         
-        if (noDataPlaceholderView.superview == nil) {
-            if (([self isKindOfClass:[UITableView class]] || [self isKindOfClass:[UICollectionView class]]) &&
-                [self.subviews count] > 1) {
-                [self insertSubview:noDataPlaceholderView atIndex:0];
-            } else {
-                [self addSubview:noDataPlaceholderView];
-            }
-        }
-        
         // 重置视图及其约束
         [noDataPlaceholderView resetSubviews];
-        
         
         UIView *customView = [self xy_noDataPlacehodlerCustomView];
         if (customView) {
@@ -535,6 +530,7 @@ static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
         noDataPlaceholderView.contentView.backgroundColor = [self xy_noDataPlacehodlerContentBackgroundColor];
         noDataPlaceholderView.hidden = NO;
         noDataPlaceholderView.clipsToBounds = YES;
+        noDataPlaceholderView.imageViewSize = [self xy_noDataPlaceholderImageViewSize];
         
         noDataPlaceholderView.userInteractionEnabled = self.delegateFlags.noDataPlacehodlerIsAllowedResponseEvent;
         
@@ -586,6 +582,7 @@ static const CGFloat NoDataPlaceholderHorizontalSpaceRatioValue = 16.0;
     
     BOOL flag = [objc_getAssociatedObject(self, _cmd) boolValue];
     if (!flag) {
+        flag = YES;
         if (![self xy_noDataPlacehodlerCanDisplay]) {
             [self xy_removeNoDataPlacehodlerView];
         }
@@ -857,7 +854,14 @@ buttonEdgeInsets = _buttonEdgeInsets;
     if (!self) {
         return nil;
     }
-    [view addSubview:self];
+    if (self.superview == nil) {
+        if (([view isKindOfClass:[UITableView class]] || [view isKindOfClass:[UICollectionView class]]) &&
+            [view.subviews count] > 1) {
+            [view insertSubview:self atIndex:0];
+        } else {
+            [view addSubview:self];
+        }
+    }
     
     NSLayoutConstraint *selfTopConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.superview attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
     _selfTopConstraint = selfTopConstraint;
@@ -940,8 +944,10 @@ buttonEdgeInsets = _buttonEdgeInsets;
 }
 
 - (void)setCustomView:(UIView *)customView {
-    
-    if (!customView) {
+    if ([_customView isEqual:customView]) {
+        if (!customView.superview) {
+            [self.contentView addSubview:_customView];
+        }
         return;
     }
     
@@ -949,16 +955,22 @@ buttonEdgeInsets = _buttonEdgeInsets;
         [_customView removeFromSuperview];
         _customView = nil;
     }
-    [customView removeConstraints:customView.constraints];
     _customView = customView;
+    if (!customView) {
+        return;
+    }
+    [customView removeConstraints:customView.constraints];
     _customView.translatesAutoresizingMaskIntoConstraints = NO;
     _customView.accessibilityIdentifier = @"customView";
     [self.contentView addSubview:_customView];
+    
 }
 
 
 - (void)setImageView:(UIImageView *)imageView {
-    
+    if ([_imageView isEqual:imageView]) {
+        return;
+    }
     [_imageView removeFromSuperview];
     _imageView = nil;
     
@@ -969,13 +981,16 @@ buttonEdgeInsets = _buttonEdgeInsets;
     [imageView removeConstraints:imageView.constraints];
     _imageView = imageView;
     _imageView.translatesAutoresizingMaskIntoConstraints = NO;
-    _imageView.accessibilityIdentifier = NSStringFromSelector(@selector(imageView));
+    _imageView.accessibilityIdentifier = @"imageView";
     [self.contentView addSubview:_imageView];
     
 }
 
 - (void)setTitleLabel:(UILabel *)titleLabel {
     
+    if (_titleLabel == titleLabel) {
+        return;
+    }
     [_titleLabel removeFromSuperview];
     _titleLabel = nil;
     
@@ -985,11 +1000,14 @@ buttonEdgeInsets = _buttonEdgeInsets;
     [titleLabel removeConstraints:titleLabel.constraints];
     _titleLabel = titleLabel;
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    _titleLabel.accessibilityIdentifier = NSStringFromSelector(@selector(titleLabel));
+    _titleLabel.accessibilityIdentifier = @"titleLabel";
     [self.contentView addSubview:_titleLabel];
 }
 
 - (void)setDetailLabel:(UILabel *)detailLabel {
+    if (_detailLabel == detailLabel) {
+        return;
+    }
     [_detailLabel removeFromSuperview];
     _detailLabel = nil;
     
@@ -999,12 +1017,14 @@ buttonEdgeInsets = _buttonEdgeInsets;
     [detailLabel removeConstraints:detailLabel.constraints];
     _detailLabel = detailLabel;
     _detailLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    _detailLabel.accessibilityIdentifier = NSStringFromSelector(@selector(detailLabel));
+    _detailLabel.accessibilityIdentifier = @"detailLabel";
     [self.contentView addSubview:_detailLabel];
 }
 
 - (void)setReloadButton:(UIButton *)reloadButton {
-    
+    if (_reloadButton == reloadButton) {
+        return;
+    }
     [_reloadButton removeFromSuperview];
     _reloadButton = nil;
     
@@ -1018,6 +1038,7 @@ buttonEdgeInsets = _buttonEdgeInsets;
     [_reloadButton addTarget:self action:@selector(clickReloadBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:_reloadButton];
 }
+
 
 ////////////////////////////////////////////////////////////////////////
 #pragma mark - get
@@ -1093,7 +1114,6 @@ buttonEdgeInsets = _buttonEdgeInsets;
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.translatesAutoresizingMaskIntoConstraints = NO;
         btn.backgroundColor = [UIColor clearColor];
-        // 按钮内部控件垂直对齐方式为中心
         btn.contentVerticalAlignment = UIControlContentHorizontalAlignmentCenter;
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         [btn addTarget:self action:@selector(clickReloadBtn:) forControlEvents:UIControlEventTouchUpInside];
@@ -1193,6 +1213,7 @@ buttonEdgeInsets = _buttonEdgeInsets;
 ////////////////////////////////////////////////////////////////////////
 /// 移除所有约束
 - (void)removeAllConstraints {
+    [self.superview removeConstraints:self.constraints];
     [self removeConstraints:self.constraints];
     [_contentView removeConstraints:_contentView.constraints];
     
@@ -1259,7 +1280,7 @@ buttonEdgeInsets = _buttonEdgeInsets;
                 NSDictionary *imageMetrics = @{@"imageLeftSpace": @(imageLeftSpace),
                                                @"imageRightSpace": @(imageRightSpace)};
                 [metrics addEntriesFromDictionary:imageMetrics];
-                [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(imageLeftSpace@750)-[imageView(>=0)]-(imageRightSpace@750)-|"
+                [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(imageLeftSpace@750)-[imageView]-(imageRightSpace@750)-|"
                                                                                          options:0
                                                                                          metrics:metrics
                                                                                            views:subviewDict]];
@@ -1268,6 +1289,12 @@ buttonEdgeInsets = _buttonEdgeInsets;
             else {
                 NSLayoutConstraint *imageViewCenterX = [NSLayoutConstraint constraintWithItem:_imageView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0];
                 [self.contentView addConstraint:imageViewCenterX];
+            }
+            if (self.imageViewSize.width > 0.0 && self.imageViewSize.height > 0.0) {
+                [self.contentView addConstraints:@[
+                                                   [NSLayoutConstraint constraintWithItem:self.imageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.imageViewSize.width],
+                                                   [NSLayoutConstraint constraintWithItem:self.imageView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.imageViewSize.height],
+                                                   ]];
             }
             
         } else {
@@ -1358,10 +1385,7 @@ buttonEdgeInsets = _buttonEdgeInsets;
         for (NSInteger i = 0; i < subviewKeyArray.count; ++i) {
             CGFloat topSpace = globalverticalSpace;
             NSString *viewName = subviewKeyArray[i];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            UIView *view = [self performSelector:NSSelectorFromString(viewName)];
-#pragma clang diagnostic pop
+            UIView *view = subviewDict[viewName];
             // 拼接间距值
             if ([self canChangeInsets:view.noDataPlaceholderViewContentEdgeInsets]) {
                 topSpace = view.noDataPlaceholderViewContentEdgeInsets.top;
@@ -1395,17 +1419,10 @@ buttonEdgeInsets = _buttonEdgeInsets;
     [super updateConstraints];
 }
 
-- (void)applyPriority:(UILayoutPriority)priority toConstraints:(NSArray *)constraints {
-    for (NSLayoutConstraint *constraint in constraints) {
-        constraint.priority = priority;
-    }
-}
-
 ////////////////////////////////////////////////////////////////////////
 #pragma mark -
 ////////////////////////////////////////////////////////////////////////
 
-// 控制器事件的响应
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     
     UIView *hitView = [super hitTest:point withEvent:event];

@@ -14,19 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - NODataPlaceholderView (0.0.2)
+  - NODataPlaceholderView (0.0.3)
   - SuspensionControl (0.0.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - NODataPlaceholderView (~> 0.0.2)
+  - NODataPlaceholderView (~> 0.0.3)
   - SuspensionControl (~> 0.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  NODataPlaceholderView: 16dc9ea33c909e7ce02f017fe553ab9eefbe2115
+  NODataPlaceholderView: 886d7db8beea4fcc7e06c01654ec269456b11a34
   SuspensionControl: 528d95367b0a10634a60e63bc4c5a5f808f48399
 
-PODFILE CHECKSUM: c85c1b1ed649a4e8e0238988effe5947c3a29e10
+PODFILE CHECKSUM: 1790439cae8a1c3e3d0a8f3d8e118a5cec98c9df
 
 COCOAPODS: 1.2.0
